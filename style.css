@@ -897,54 +897,83 @@ body {
     }
 }
 
-/* Responsivo - TABELA de verdade no mobile (com scroll horizontal) */
-@media (max-width: 768px) {
+/* Responsivo - sem scroll: tabela vira lista compacta (2 colunas) */
+@media (max-width: 768px){
 
-  /* Mantém a tabela como tabela e permite scroll */
-  .reading-plan{
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    text-align: left; /* evita aquele centro estranho no mobile */
-  }
+  /* some o header no mobile */
+  .reading-plan__header{ display: none; }
 
-  /* Mantém header e linhas como grid, mas com largura mínima */
-  .reading-plan__header,
+  /* cada row vira um item compacto */
   .reading-plan__row{
-    grid-template-columns: 64px 1.4fr .8fr 1.2fr;
+    grid-template-columns: 64px 1fr;
+    gap: 10px;
+    padding: 12px;
+    align-items: start;
   }
 
-  /* Ajuste de densidade */
-  .reading-plan__header{
-    font-size: .72rem;
-  }
-  .reading-plan__header span{
-    padding: 12px 10px;
-  }
-  .reading-plan__row{
-    font-size: .95rem;
-  }
+  /* remove bordas internas de colunas (porque não é mais “coluna por coluna”) */
   .reading-plan__row span{
-    padding: 12px 10px;
+    border-right: none !important;
+    padding: 0;
   }
 
-  /* DIA sticky (fica preso à esquerda enquanto arrasta) */
-  .reading-plan__header span:first-child,
-  .reading-plan__row span:first-child{
-    position: sticky;
-    left: 0;
-    z-index: 2;
-    background: rgba(244, 239, 231, .95);
-  }
-
-  /* Garante que o "day" continue com destaque e por cima */
+  /* DIA vira “badge” */
   .reading-plan .day{
-    z-index: 3;
-    background: rgba(168, 119, 85, .12);
+    align-self: start;
+    justify-self: start;
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: rgba(168,119,85,.12);
+    border: 1px solid var(--line);
+    font-weight: 900;
   }
 
-  /* dica visual de scroll (sombra na lateral) */
-  .reading-plan{
-    mask-image: linear-gradient(to right, transparent 0, black 18px, black calc(100% - 18px), transparent 100%);
+  /* os 3 campos viram linhas empilhadas */
+  .reading-plan__row span:nth-child(2),
+  .reading-plan__row span:nth-child(3),
+  .reading-plan__row span:nth-child(4){
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 10px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: rgba(244,239,231,.55);
+    font-weight: 700;
+  }
+
+  /* rótulos antes do valor (VT / Salmo / NT) */
+  .reading-plan__row span:nth-child(2)::before{
+    content: "Velho Testamento";
+  }
+  .reading-plan__row span:nth-child(3)::before{
+    content: "Salmo";
+  }
+  .reading-plan__row span:nth-child(4)::before{
+    content: "Novo Testamento";
+  }
+
+  .reading-plan__row span:nth-child(2)::before,
+  .reading-plan__row span:nth-child(3)::before,
+  .reading-plan__row span:nth-child(4)::before{
+    font-size: .72rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: rgba(31,26,22,.55);
+    font-weight: 900;
+  }
+
+  /* agrupa as 3 linhas na mesma coluna (a direita do DIA) */
+  .reading-plan__row span:nth-child(2){ grid-column: 2; }
+  .reading-plan__row span:nth-child(3){ grid-column: 2; }
+  .reading-plan__row span:nth-child(4){ grid-column: 2; }
+
+  /* hover mais suave */
+  .reading-plan__row:hover{
+    background: rgba(244,239,231,.35);
   }
 }
 
