@@ -614,3 +614,523 @@ body{
     opacity: 1;
     transform: translateY(0);
 }
+
+/* ===== Plano de Leitura ===== */
+.reading-plan{
+    background: rgba(255,255,255,.75);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+}
+
+/* Cabeçalho */
+.reading-plan__header{
+    display: grid;
+    grid-template-columns: 60px 1.4fr .8fr 1.2fr;
+    background: rgba(217,199,179,.35);
+    border-bottom: 1px solid var(--line);
+    font-weight: 800;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+.reading-plan__header span{
+    padding: 14px 12px;
+    border-right: 1px solid var(--line);
+}
+
+.reading-plan__header span:last-child{
+    border-right: none;
+}
+
+/* Linhas */
+.reading-plan__row{
+    display: grid;
+    grid-template-columns: 60px 1.4fr .8fr 1.2fr;
+    border-bottom: 1px solid var(--line);
+    font-size: .95rem;
+}
+
+.reading-plan__row:last-child{
+    border-bottom: none;
+}
+
+.reading-plan__row span{
+    padding: 12px;
+    border-right: 1px solid var(--line);
+}
+
+.reading-plan__row span:last-child{
+    border-right: none;
+}
+
+.reading-plan__row:hover{
+    background: rgba(244,239,231,.6);
+}
+
+/* Dia */
+.reading-plan .day{
+    font-weight: 800;
+    text-align: center;
+    background: rgba(168,119,85,.08);
+}
+
+/* Rodapé */
+.plan-footer{
+    margin-top: 12px;
+    text-align: right;
+    font-size: .9rem;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 768px){
+
+    .reading-plan__header{
+        display: none;
+    }
+
+    .reading-plan__row{
+        grid-template-columns: 1fr;
+        gap: 6px;
+        padding: 14px;
+    }
+
+    .reading-plan__row span{
+        border: none;
+        padding: 4px 0;
+        font-size: .95rem;
+    }
+
+    .reading-plan__row .day{
+        align-self: flex-start;
+        width: fit-content;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(168,119,85,.18);
+        margin-bottom: 6px;
+    }
+}
+
+/* ===== Preview Calendar ===== */
+.preview--calendar{
+  gap: 10px;
+}
+
+.cal__dow{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  padding: 0 2px;
+}
+
+.cal__dow span{
+  font-size: .72rem;
+  letter-spacing: .08em;
+  font-weight: 900;
+  color: rgba(31,26,22,.55);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cal__grid{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.cal__cell{
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(244,239,231,.85);
+  min-height: 44px;
+
+  display: grid;
+  place-items: center;
+
+  font-weight: 900;
+  color: rgba(31,26,22,.78);
+  cursor: pointer;
+  user-select: none;
+
+  transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+}
+
+.cal__cell:hover{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.85);
+  box-shadow: var(--shadow-soft);
+}
+
+.cal__cell--empty{
+  opacity: .35;
+  cursor: default;
+}
+
+.cal__cell--today{
+  background: rgba(168,119,85,.18);
+  border-color: rgba(168,119,85,.35);
+}
+
+.cal__cell--selected{
+  background: rgba(31,26,22,.92);
+  color: var(--bg);
+  border-color: rgba(31,26,22,.92);
+}
+
+/* Detalhe do plano */
+.plan-detail{
+  margin-top: 14px;
+  background: rgba(255,255,255,.75);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+.plan-detail__title{
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  letter-spacing: -0.4px;
+  margin-bottom: 8px;
+}
+
+.plan-detail__items{
+  display: grid;
+  gap: 10px;
+}
+
+.plan-item{
+  display: grid;
+  gap: 4px;
+  padding: 12px 12px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: rgba(244,239,231,.55);
+}
+
+.plan-item strong{
+  font-size: .8rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(31,26,22,.65);
+}
+
+.plan-item span{
+  font-weight: 700;
+}
+
+/* Mobile: detalhe abaixo, ok */
+
+/* ===== Conteúdos / Plano ===== */
+.feature--plan{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.feature--plan .feature__text{
+  margin-bottom: 2px;
+}
+
+.feature__right{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* Preview do ano */
+.preview--year .year-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.month-chip{
+  border: 1px solid var(--line);
+  background: rgba(244,239,231,.85);
+  border-radius: 14px;
+  padding: 12px 10px;
+  font-weight: 900;
+  letter-spacing: .06em;
+  font-size: .78rem;
+  cursor: pointer;
+  transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+}
+
+.month-chip:hover{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.85);
+  box-shadow: var(--shadow-soft);
+}
+
+.month-chip.is-active{
+  background: rgba(31,26,22,.92);
+  color: var(--bg);
+  border-color: rgba(31,26,22,.92);
+}
+
+/* Subhead dos episódios */
+.subhead{
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+
+.subhead__title{
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+}
+
+.subhead__subtitle{
+  margin-top: 6px;
+}
+
+/* Responsivo */
+@media (max-width: 920px){
+  .feature__right{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Plano 365 (layout novo) ===== */
+.plan365{
+  display: grid;
+  gap: 14px;
+}
+
+/* Card de apresentação */
+.plan365__intro{
+  padding: 18px;
+}
+
+/* Preview do ano dentro do card */
+.year-preview{
+  margin-top: 14px;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.year-preview__top{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.year-grid{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+
+.month-chip{
+  border: 1px solid var(--line);
+  background: rgba(244,239,231,.85);
+  border-radius: 14px;
+  padding: 10px 8px;
+  font-weight: 900;
+  letter-spacing: .06em;
+  font-size: .78rem;
+  cursor: pointer;
+  transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+}
+
+.month-chip:hover{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.85);
+  box-shadow: var(--shadow-soft);
+}
+
+.month-chip.is-active{
+  background: rgba(31,26,22,.92);
+  color: var(--bg);
+  border-color: rgba(31,26,22,.92);
+}
+
+/* Grid: calendário + detalhe lado a lado */
+.plan365__grid{
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 14px;
+  align-items: stretch;
+}
+
+/* Calendário dentro do card */
+.plan365__calendar{
+  padding: 14px;
+}
+
+/* Detail como card */
+.plan365__detail{
+  padding: 18px;
+}
+
+/* Ajustes finos para o calendário dentro do card */
+.plan365__calendar .preview__top{
+  margin-bottom: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 920px){
+  .year-grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .plan365__grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+.month-chip.is-disabled{
+  opacity: .35;
+  cursor: not-allowed;
+  background: rgba(244,239,231,.55);
+  box-shadow: none;
+  transform: none;
+}
+
+/* ===== Switch Calendário/Tabela ===== */
+.plan365__switch{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.switch-btn{
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.65);
+  color: var(--ink);
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+  transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+}
+
+.switch-btn:hover{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.9);
+}
+
+.switch-btn.is-active{
+  background: rgba(31,26,22,.92);
+  color: var(--bg);
+  border-color: rgba(31,26,22,.92);
+}
+
+.switch-hint{
+  margin-left: 4px;
+  font-size: .95rem;
+}
+
+/* ===== Container da tabela ===== */
+.plan365__tableView{
+  margin-top: 10px;
+}
+
+.table-head{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.table-title{
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+}
+
+.table-subtitle{
+  margin-top: 6px;
+}
+
+/* ===== Tabela (reading-plan) ===== */
+.reading-plan{
+  background: rgba(255,255,255,.75);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.reading-plan__header{
+  display: grid;
+  grid-template-columns: 70px 1.4fr .8fr 1.2fr;
+  background: rgba(217,199,179,.35);
+  border-bottom: 1px solid var(--line);
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+.reading-plan__header span{
+  padding: 14px 12px;
+  border-right: 1px solid var(--line);
+}
+
+.reading-plan__header span:last-child{
+  border-right: none;
+}
+
+.reading-plan__row{
+  display: grid;
+  grid-template-columns: 70px 1.4fr .8fr 1.2fr;
+  border-bottom: 1px solid var(--line);
+  font-size: .95rem;
+}
+
+.reading-plan__row:last-child{
+  border-bottom: none;
+}
+
+.reading-plan__row span{
+  padding: 12px;
+  border-right: 1px solid var(--line);
+}
+
+.reading-plan__row span:last-child{
+  border-right: none;
+}
+
+.reading-plan__row:hover{
+  background: rgba(244,239,231,.6);
+}
+
+.reading-plan .day{
+  font-weight: 900;
+  text-align: center;
+  background: rgba(168,119,85,.08);
+}
+
+/* Responsivo: tabela vira “cards” */
+@media (max-width: 768px){
+  .reading-plan__header{ display:none; }
+
+  .reading-plan__row{
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 14px;
+  }
+
+  .reading-plan__row span{
+    border: none;
+    padding: 4px 0;
+  }
+
+  .reading-plan__row .day{
+    width: fit-content;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(168,119,85,.18);
+    margin-bottom: 6px;
+  }
+}
