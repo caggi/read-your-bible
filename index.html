@@ -1,55 +1,238 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Read Your Bible - Incentivando pessoas a se aproximarem da Palavra de Deus">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Read Your Bible — Incentivando pessoas a conhecerem a Bíblia como o manual da vida e o seu doce Escritor." />
     <title>Read Your Bible</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontes (estilo editorial: serif + sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="logo-placeholder">
-                <span class="logo-icon">📖</span>
+    <!-- Topbar -->
+    <header class="topbar">
+        <div class="container topbar__inner">
+
+            <a class="brand" href="#inicio" aria-label="Read Your Bible - Início">
+                <span class="brand__ring">
+                    <img
+                        src="assets/logo.png"
+                        alt="Read Your Bible"
+                        class="brand__logo"
+                    />
+                </span>
+                <span class="brand__text">Read Your Bible</span>
+            </a>
+
+            <nav class="topnav">
+                <a href="#missao">Missão</a>
+                <a href="#conteudos">Conteúdos</a>
+                <a href="#links">Links</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <main id="inicio">
+        <section class="hero">
+            <div class="container hero__grid">
+                <div class="hero__left">
+                    <!-- <div class="logo" data-animate>
+                        <span class="logo__placeholder" aria-hidden="true">Read<br/>Your<br/>Bible</span>
+                    </div> -->
+
+                    <div class="logo" data-animate>
+                        <img src="assets/logo.png" alt="Read Your Bible" class="logo__img" />
+                    </div>
+
+                    <h1 class="hero__title" data-animate>Leia a Bíblia.</h1>
+                    <p class="hero__subtitle" data-animate>
+                        O meu objetivo é te incentivar a conhecer o manual da vida e o seu doce Escritor.
+                    </p>
+
+                    <div class="hero__cta" data-animate>
+                        <a class="btn btn--primary" href="#conteudos">Começar por aqui</a>
+                        <a class="btn btn--ghost" href="https://wa.me/5565999981976" target="_blank" rel="noopener noreferrer">
+                            Encomendar caneca ☕
+                        </a>
+                    </div>
+
+                    <div class="hero__mini" data-animate>
+                        <a class="pill" href="https://www.instagram.com/read.your.bible__/" target="_blank" rel="noopener noreferrer">
+                            @read.your.bible__
+                        </a>
+                        <span class="dot" aria-hidden="true"></span>
+                        <span class="muted">Conteúdo diário • Plano 365 • Episódios</span>
+                    </div>
+                </div>
+
+                <div class="hero__right" data-animate>
+                    <!-- “mosaico” inspirado no feed -->
+                    <div class="mosaic">
+                        <div class="mosaic__card">
+                            <span class="mosaic__kicker">Bíblia em 365</span>
+                            <span class="mosaic__title">Plano de leitura</span>
+                            <span class="mosaic__desc">Um passo por dia, com constância.</span>
+                        </div>
+
+                        <div class="mosaic__card mosaic__card--soft">
+                            <span class="mosaic__kicker">Episódios</span>
+                            <span class="mosaic__title">Conversas e reflexões</span>
+                            <span class="mosaic__desc">Curto, prático e profundo.</span>
+                        </div>
+
+                        <div class="mosaic__card mosaic__card--quote">
+                            <span class="mosaic__quote">“Visite bons livros, mas faça da Bíblia o seu lar.”</span>
+                            <span class="mosaic__author">— Charles H. Spurgeon</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h1 class="title">Read Your Bible</h1>
-            <p class="subtitle">Aproxime-se da Palavra de Deus</p>
-        </div>
-    </section>
+        </section>
 
-    <!-- Mission Section -->
-    <section class="mission">
-        <div class="container">
-            <h2>Nossa Missão</h2>
-            <p>O Read Your Bible existe para incentivar pessoas a se aproximarem da Palavra de Deus e viverem uma fé prática, simples e diária.</p>
-        </div>
-    </section>
+        <!-- MISSÃO -->
+        <section id="missao" class="section">
+            <div class="container">
+                <div class="section__head" data-animate>
+                    <h2 class="section__title">Nossa missão</h2>
+                    <p class="section__subtitle">
+                        Incentivar pessoas a se aproximarem da Palavra de Deus e viverem uma fé prática, simples e diária.
+                    </p>
+                </div>
 
-    <!-- Links Section -->
-    <section class="links">
-        <div class="container">
-            <h2>Conecte-se Conosco</h2>
-            <div class="buttons">
-                <a href="https://www.instagram.com/read.your.bible__/" target="_blank" rel="noopener noreferrer" class="btn btn-instagram">
-                    <span class="icon">📱</span>
-                    <span>Instagram</span>
-                </a>
-                <a href="https://wa.me/5565999981976" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
-                    <span class="icon">💬</span>
-                    <span>WhatsApp</span>
-                </a>
+                <div class="cards" data-animate>
+                    <article class="card">
+                        <h3>Constância</h3>
+                        <p>Pequenos passos todos os dias — sem pressa, com direção.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Clareza</h3>
+                        <p>Uma linguagem simples, para que a mensagem seja o centro.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Comunidade</h3>
+                        <p>Conteúdos para caminhar junto: leituras, episódios e reflexões.</p>
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <!-- CONTEÚDOS -->
+        <section id="conteudos" class="section section--alt">
+            <div class="container">
+                <div class="section__head" data-animate>
+                    <h2 class="section__title">Por onde começar</h2>
+                    <p class="section__subtitle">Escolha um caminho e siga no seu ritmo.</p>
+                </div>
+
+                <div class="feature" data-animate>
+                    <div class="feature__text">
+                        <h3>Bíblia em 365 dias</h3>
+                        <p>
+                            Um plano diário para você ler com constância. (Você pode colocar aqui o PDF/Imagem do plano depois.)
+                        </p>
+
+                        <!-- Quando você tiver o arquivo, coloque em /assets e link aqui -->
+                        <div class="feature__actions">
+                            <a class="btn btn--primary btn--small" href="#links">Abrir links</a>
+                            <a class="btn btn--ghost btn--small" href="https://www.instagram.com/read.your.bible__/" target="_blank" rel="noopener noreferrer">
+                                Ver no Instagram
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="feature__preview">
+                        <div class="preview">
+                            <div class="preview__top">
+                                <span class="badge">JANEIRO</span>
+                                <span class="muted">Plano 365</span>
+                            </div>
+                            <div class="preview__grid" aria-hidden="true">
+                                <span></span><span></span><span></span><span></span>
+                                <span></span><span></span><span></span><span></span>
+                                <span></span><span></span><span></span><span></span>
+                            </div>
+                            <div class="preview__footer muted">Substitua por uma imagem real quando quiser</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards cards--episodes" data-animate>
+                    <article class="card card--episode">
+                        <span class="tag">Episódio</span>
+                        <h3>O convite</h3>
+                        <p>Uma porta de entrada simples para começar hoje.</p>
+                    </article>
+                    <article class="card card--episode">
+                        <span class="tag">Episódio</span>
+                        <h3>Como eu conheci Jesus</h3>
+                        <p>História, fé e prática no dia a dia.</p>
+                    </article>
+                    <article class="card card--episode">
+                        <span class="tag">Episódio</span>
+                        <h3>Grupo de amigos</h3>
+                        <p>Sobre caminhar junto e permanecer firme.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- LINKS -->
+        <section id="links" class="section">
+            <div class="container">
+                <div class="section__head" data-animate>
+                    <h2 class="section__title">Links</h2>
+                    <p class="section__subtitle">Tudo em um lugar só.</p>
+                </div>
+
+                <div class="links" data-animate>
+                    <a class="linkcard" href="https://www.instagram.com/read.your.bible__/" target="_blank" rel="noopener noreferrer">
+                        <span class="linkcard__icon">📷</span>
+                        <span class="linkcard__text">
+                            <strong>Instagram</strong>
+                            <span class="muted">@read.your.bible__</span>
+                        </span>
+                        <span class="linkcard__arrow">→</span>
+                    </a>
+
+                    <a class="linkcard" href="https://wa.me/5565999981976" target="_blank" rel="noopener noreferrer">
+                        <span class="linkcard__icon">💬</span>
+                        <span class="linkcard__text">
+                            <strong>WhatsApp</strong>
+                            <span class="muted">5565999981976</span>
+                        </span>
+                        <span class="linkcard__arrow">→</span>
+                    </a>
+
+                    <a class="linkcard" href="#inicio">
+                        <span class="linkcard__icon">📖</span>
+                        <span class="linkcard__text">
+                            <strong>Voltar ao início</strong>
+                            <span class="muted">Read Your Bible</span>
+                        </span>
+                        <span class="linkcard__arrow">↑</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Read Your Bible. Todos os direitos reservados.</p>
+        <div class="container footer__inner">
+            <span class="muted">© 2025 Read Your Bible</span>
+            <span class="muted">Feito com constância ✨</span>
         </div>
     </footer>
+
+    <!-- Botão flutuante WhatsApp -->
+    <a class="fab" href="https://wa.me/5565999981976" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">
+        💬
+    </a>
 
     <script src="script.js"></script>
 </body>

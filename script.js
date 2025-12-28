@@ -1,58 +1,21 @@
-// Simple animations and interactivity for Read Your Bible website
+document.addEventListener('DOMContentLoaded', function () {
+    const items = document.querySelectorAll('[data-animate]');
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Add smooth fade-in animation to sections
-    const sections = document.querySelectorAll('section');
-    
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.12,
+        rootMargin: '0px 0px -60px 0px'
     };
 
-    const sectionObserver = new IntersectionObserver(function(entries, observer) {
+    const io = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('is-in');
+            io.unobserve(entry.target);
         });
     }, observerOptions);
 
-    // Apply initial styles and observe sections
-    sections.forEach(section => {
-        section.style.opacity = '0';
-        section.style.transform = 'translateY(20px)';
-        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        sectionObserver.observe(section);
-    });
+    items.forEach(el => io.observe(el));
 
-    // Add click tracking (console log for demo - replace with analytics in production)
-    const buttons = document.querySelectorAll('.btn');
-    buttons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            const buttonText = this.textContent.trim();
-            // TODO: Replace with actual analytics tracking (e.g., Google Analytics, Plausible)
-            console.log(`Botão clicado: ${buttonText}`);
-        });
-    });
-
-    // Add keyboard navigation support
-    document.addEventListener('keydown', function(e) {
-        // Press 'i' to go to Instagram
-        if (e.key === 'i' || e.key === 'I') {
-            const instagramBtn = document.querySelector('.btn-instagram');
-            if (instagramBtn) {
-                instagramBtn.click();
-            }
-        }
-        // Press 'w' to go to WhatsApp
-        if (e.key === 'w' || e.key === 'W') {
-            const whatsappBtn = document.querySelector('.btn-whatsapp');
-            if (whatsappBtn) {
-                whatsappBtn.click();
-            }
-        }
-    });
-
+    // Pequeno log (pode remover depois)
     console.log('Read Your Bible website carregado com sucesso! 📖');
 });
