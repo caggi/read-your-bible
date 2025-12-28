@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,14 +18,9 @@
     <!-- Topbar -->
     <header class="topbar">
         <div class="container topbar__inner">
-
             <a class="brand" href="#inicio" aria-label="Read Your Bible - Início">
                 <span class="brand__ring">
-                    <img
-                        src="assets/logo.png"
-                        alt="Read Your Bible"
-                        class="brand__logo"
-                    />
+                    <img src="assets/logo.png" alt="Read Your Bible" class="brand__logo" />
                 </span>
                 <span class="brand__text">Read Your Bible</span>
             </a>
@@ -42,10 +38,6 @@
         <section class="hero">
             <div class="container hero__grid">
                 <div class="hero__left">
-                    <!-- <div class="logo" data-animate>
-                        <span class="logo__placeholder" aria-hidden="true">Read<br/>Your<br/>Bible</span>
-                    </div> -->
-
                     <div class="logo" data-animate>
                         <img src="assets/logo.png" alt="Read Your Bible" class="logo__img" />
                     </div>
@@ -122,6 +114,36 @@
             </div>
         </section>
 
+<!-- EPISÓDIOS -->
+<section id="episodios" class="section section--alt">
+    <div class="container">
+        <div class="section__head" data-animate>
+            <h2 class="section__title">Episódios</h2>
+            <p class="section__subtitle">
+                Conversas e reflexões curtas para aplicar a fé no dia a dia.
+            </p>
+        </div>
+
+        <div class="cards" data-animate>
+            <article class="card">
+                <h3>O convite</h3>
+                <p class="muted"><strong>Episódio</strong> · Uma porta de entrada simples para começar hoje.</p>
+            </article>
+
+            <article class="card">
+                <h3>Como eu conheci Jesus</h3>
+                <p class="muted"><strong>Episódio</strong> · História, fé e prática no dia a dia.</p>
+            </article>
+
+            <article class="card">
+                <h3>Grupo de amigos</h3>
+                <p class="muted"><strong>Episódio</strong> · Sobre caminhar junto e permanecer firme.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+
         <!-- CONTEÚDOS -->
         <section id="conteudos" class="section section--alt">
             <div class="container">
@@ -130,55 +152,130 @@
                     <p class="section__subtitle">Escolha um caminho e siga no seu ritmo.</p>
                 </div>
 
-                <div class="feature" data-animate>
-                    <div class="feature__text">
+                <!-- Plano 365 -->
+                <div class="plan365" data-animate>
+                    <!-- Card apresentação -->
+                    <article class="card plan365__intro">
+                        <span class="tag">Plano</span>
                         <h3>Bíblia em 365 dias</h3>
                         <p>
-                            Um plano diário para você ler com constância. (Você pode colocar aqui o PDF/Imagem do plano depois.)
+                            Um plano diário para você ler com constância. Use o calendário para selecionar o dia e ver as leituras.
                         </p>
 
-                        <!-- Quando você tiver o arquivo, coloque em /assets e link aqui -->
-                        <div class="feature__actions">
-                            <a class="btn btn--primary btn--small" href="#links">Abrir links</a>
-                            <a class="btn btn--ghost btn--small" href="https://www.instagram.com/read.your.bible__/" target="_blank" rel="noopener noreferrer">
-                                Ver no Instagram
-                            </a>
-                        </div>
-                    </div>
+                        <!-- Preview do ANO (somente JAN habilitado) -->
+                        <div class="year-preview" aria-label="Preview do ano">
+                            <div class="year-grid" role="list" aria-label="Meses do ano">
+                                <button class="month-chip is-active" type="button">JAN</button>
 
-                    <div class="feature__preview">
-                        <div class="preview">
+                                <button class="month-chip is-disabled" type="button" disabled>FEV</button>
+                                <button class="month-chip is-disabled" type="button" disabled>MAR</button>
+                                <button class="month-chip is-disabled" type="button" disabled>ABR</button>
+                                <button class="month-chip is-disabled" type="button" disabled>MAI</button>
+                                <button class="month-chip is-disabled" type="button" disabled>JUN</button>
+                                <button class="month-chip is-disabled" type="button" disabled>JUL</button>
+                                <button class="month-chip is-disabled" type="button" disabled>AGO</button>
+                                <button class="month-chip is-disabled" type="button" disabled>SET</button>
+                                <button class="month-chip is-disabled" type="button" disabled>OUT</button>
+                                <button class="month-chip is-disabled" type="button" disabled>NOV</button>
+                                <button class="month-chip is-disabled" type="button" disabled>DEZ</button>
+                            </div>
+                        </div>
+
+                        <!-- Switch Calendário/Tabela -->
+                        <div class="plan365__switch" data-animate>
+                            <button type="button" class="switch-btn is-active" data-view="calendar">Calendário</button>
+                            <button type="button" class="switch-btn" data-view="table">Tabela</button>
+                            <span class="muted switch-hint">Escolha a visualização</span>
+                        </div>
+                    </article>
+
+                    <!-- Calendário + detalhe -->
+                    <div class="plan365__grid" id="planCalendarView">
+                        <article class="card plan365__calendar">
                             <div class="preview__top">
-                                <span class="badge">JANEIRO</span>
-                                <span class="muted">Plano 365</span>
+                                <span class="badge" id="monthBadge">JANEIRO</span>
                             </div>
-                            <div class="preview__grid" aria-hidden="true">
-                                <span></span><span></span><span></span><span></span>
-                                <span></span><span></span><span></span><span></span>
-                                <span></span><span></span><span></span><span></span>
+
+                            <div class="cal__dow" aria-hidden="true">
+                                <span>DOM</span><span>SEG</span><span>TER</span><span>QUA</span><span>QUI</span><span>SEX</span><span>SÁB</span>
                             </div>
-                            <div class="preview__footer muted">Substitua por uma imagem real quando quiser</div>
-                        </div>
+
+                            <div id="janCalendar" class="cal__grid" aria-label="Calendário do plano de leitura"></div>
+
+                            <div class="preview__footer muted">Clique em um dia para ver as leituras.</div>
+                        </article>
+
+                        <article class="card plan365__detail" id="planDetail">
+                            <div class="plan-detail__title">Selecione um dia</div>
+                            <div class="plan-detail__items muted">
+                                Clique em um dia do calendário para ver as leituras de Janeiro.
+                            </div>
+                        </article>
                     </div>
+
+                    <!-- Tabela -->
+                    <div class="plan365__tableView" id="planTableView" hidden data-animate>
+                        <article class="card plan365__tableCard">
+                            <div class="preview__top">
+                                <span class="badge" id="monthBadge">JANEIRO</span>
+                            </div>
+
+                            <div class="reading-plan">
+                                <div class="reading-plan__header">
+                                    <span>DIA</span>
+                                    <span>VELHO TESTAMENTO</span>
+                                    <span>SALMO</span>
+                                    <span>NOVO TESTAMENTO</span>
+                                </div>
+
+                                <div class="reading-plan__row">
+                                    <span class="day">1</span>
+                                    <span>Gênesis 1–2</span>
+                                    <span>Salmo 1</span>
+                                    <span>Mateus 1–2</span>
+                                </div>
+
+                                <div class="reading-plan__row">
+                                    <span class="day">2</span>
+                                    <span>Gênesis 3–4</span>
+                                    <span>Salmo 2</span>
+                                    <span>Mateus 3–4</span>
+                                </div>
+
+                                <div class="reading-plan__row">
+                                    <span class="day">3</span>
+                                    <span>Gênesis 5–6</span>
+                                    <span>Salmo 3</span>
+                                    <span>Mateus 5</span>
+                                </div>
+
+                                <div class="reading-plan__row">
+                                    <span class="day">4</span>
+                                    <span>Gênesis 7–8</span>
+                                    <span>Salmo 4</span>
+                                    <span>Mateus 6</span>
+                                </div>
+
+                                <div class="reading-plan__row">
+                                    <span class="day">5</span>
+                                    <span>Gênesis 9–10</span>
+                                    <span>Salmo 5</span>
+                                    <span>Mateus 7</span>
+                                </div>
+
+                                <!-- continue até o dia 31 -->
+                            </div>
+
+                            <div class="plan-footer muted">
+                                @read.your.bible__ · Bíblia em 365 dias
+                            </div>
+                        </article>
+                    </div>
+
                 </div>
 
-                <div class="cards cards--episodes" data-animate>
-                    <article class="card card--episode">
-                        <span class="tag">Episódio</span>
-                        <h3>O convite</h3>
-                        <p>Uma porta de entrada simples para começar hoje.</p>
-                    </article>
-                    <article class="card card--episode">
-                        <span class="tag">Episódio</span>
-                        <h3>Como eu conheci Jesus</h3>
-                        <p>História, fé e prática no dia a dia.</p>
-                    </article>
-                    <article class="card card--episode">
-                        <span class="tag">Episódio</span>
-                        <h3>Grupo de amigos</h3>
-                        <p>Sobre caminhar junto e permanecer firme.</p>
-                    </article>
-                </div>
+
+
             </div>
         </section>
 
@@ -236,4 +333,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
