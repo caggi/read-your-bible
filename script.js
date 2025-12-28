@@ -26,11 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
         sectionObserver.observe(section);
     });
 
-    // Add click analytics (console log for demo purposes)
+    // Add click tracking (console log for demo - replace with analytics in production)
     const buttons = document.querySelectorAll('.btn');
     buttons.forEach(button => {
         button.addEventListener('click', function(e) {
             const buttonText = this.textContent.trim();
+            // TODO: Replace with actual analytics tracking (e.g., Google Analytics, Plausible)
             console.log(`Botão clicado: ${buttonText}`);
         });
     });
