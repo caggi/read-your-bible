@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!calendarEl || !detailEl) return;
 
-    // Leituras (preencha 16–31)
+    // Leituras – Janeiro (1–31)
     const readings = {
         1: { vt: "Gênesis 1–2", sl: "Salmo 1", nt: "Mateus 1–2" },
         2: { vt: "Gênesis 3–4", sl: "Salmo 2", nt: "Mateus 3–4" },
@@ -47,8 +47,23 @@ document.addEventListener('DOMContentLoaded', function () {
         12: { vt: "Gênesis 24", sl: "Salmo 12", nt: "Mateus 14" },
         13: { vt: "Gênesis 25–26", sl: "Salmo 13", nt: "Mateus 15" },
         14: { vt: "Gênesis 27", sl: "Salmo 14", nt: "Mateus 16–17" },
-        15: { vt: "Gênesis 28–29", sl: "Salmo 15", nt: "Mateus 18" }
-        // 16–31...
+        15: { vt: "Gênesis 28–29", sl: "Salmo 15", nt: "Mateus 18" },
+        16: { vt: "Gênesis 30", sl: "Salmo 16", nt: "Mateus 19" },
+        17: { vt: "Gênesis 31", sl: "Salmo 17", nt: "Mateus 20" },
+        18: { vt: "Gênesis 32–33", sl: "Salmo 18:1–24", nt: "Mateus 21" },
+        19: { vt: "Gênesis 34–35", sl: "Salmo 18:25–50", nt: "Mateus 22" },
+        20: { vt: "Gênesis 36", sl: "Salmo 19:1–6", nt: "Mateus 23" },
+        21: { vt: "Gênesis 37–38", sl: "Salmo 19:7–14", nt: "Mateus 24" },
+        22: { vt: "Gênesis 39–40", sl: "Salmo 20", nt: "Mateus 25" },
+        23: { vt: "Gênesis 41", sl: "Salmo 21", nt: "Mateus 26" },
+        24: { vt: "Gênesis 42–43", sl: "Salmo 22:1–18", nt: "Mateus 27" },
+        25: { vt: "Gênesis 44–45", sl: "Salmo 22:19–31", nt: "Mateus 28 – Marcos 1" },
+        26: { vt: "Gênesis 46–47", sl: "Salmo 23", nt: "Marcos 2" },
+        27: { vt: "Gênesis 48–49", sl: "Salmo 24", nt: "Marcos 3" },
+        28: { vt: "Gênesis 50 – Êxodo 1", sl: "Salmo 25", nt: "Marcos 4" },
+        29: { vt: "Êxodo 2–3", sl: "Salmo 26", nt: "Marcos 5" },
+        30: { vt: "Êxodo 4–5", sl: "Salmo 27", nt: "Marcos 6" },
+        31: { vt: "Êxodo 6–7", sl: "Salmo 28", nt: "Marcos 7" }
     };
 
     function renderDetail(day) {
