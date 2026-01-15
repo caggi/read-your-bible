@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
 
         <div class="plan-footer muted">
-        @read.your.bible__ · Bíblia em 365 dias
+        @read.your.bible · Bíblia em 365 dias
         </div>
     `;
     }
