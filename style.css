@@ -539,6 +539,10 @@ body {
     .hero__grid {
         grid-template-columns: 1fr;
     }
+
+       .hero__grid > :nth-child(2) {
+        display: none;
+    }
 }
 
 @media (max-width: 820px) {
