@@ -1012,3 +1012,224 @@ body {
 .subhead__subtitle {
     margin-top: 6px;
 }
+
+/* ===========================
+   Botão Compartilhar Story (Minimalista)
+   =========================== */
+.btn-share-story {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .85);
+    color: var(--ink);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: all .2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .04);
+}
+
+.btn-share-story:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+    border-color: rgba(168, 119, 85, .3);
+    color: var(--accent);
+}
+
+.btn-share-story:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .06);
+}
+
+.btn-share-story svg {
+    flex-shrink: 0;
+}
+
+/* ===========================
+   Card Instagram (oculto)
+   =========================== */
+.insta-card {
+    position: fixed;
+    top: -9999px;
+    left: -9999px;
+    width: 1080px;
+    height: 1920px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.insta-card__bg-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 15%, rgba(168, 119, 85, .05) 0%, transparent 40%),
+        radial-gradient(circle at 80% 85%, rgba(217, 199, 179, .07) 0%, transparent 40%);
+    pointer-events: none;
+}
+
+.insta-card__content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header */
+.insta-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+.insta-card__logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 28px;
+    background: linear-gradient(135deg, #f4efe7 0%, #fbf7f1 100%);
+    display: grid;
+    place-items: center;
+    box-shadow: 0 10px 30px rgba(31, 26, 22, .15);
+    border: 3px solid #f4efe7;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.insta-card__logo img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+}
+
+.insta-card__brand-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.insta-card__title {
+    font-family: var(--serif);
+    font-size: 40px;
+    font-weight: 700;
+    color: #1f1a16;
+    letter-spacing: -0.8px;
+}
+
+.insta-card__handle {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(31, 26, 22, .5);
+}
+
+/* Main */
+.insta-card__main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.insta-card__date-wrapper {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.insta-card__date-label {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: rgba(168, 119, 85, .7);
+    margin-bottom: 16px;
+}
+
+.insta-card__date {
+    font-size: 56px;
+    font-weight: 900;
+    letter-spacing: .05em;
+    color: #1f1a16;
+}
+
+/* Readings */
+.insta-card__readings {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.insta-reading {
+    background: #fbf7f1;
+    border: 2px solid #f4efe7;
+    border-radius: 28px;
+    padding: 38px 42px;
+    transition: all .3s ease;
+}
+
+.insta-reading--accent {
+    background: linear-gradient(135deg, rgba(168, 119, 85, .09) 0%, rgba(217, 199, 179, .14) 100%);
+    border-color: rgba(168, 119, 85, .18);
+}
+
+.insta-reading__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.insta-reading__icon {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.insta-reading__label {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: rgba(31, 26, 22, .45);
+}
+
+.insta-reading__text {
+    font-family: var(--serif);
+    font-size: 38px;
+    font-weight: 400;
+    color: #1f1a16;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* Footer */
+.insta-card__footer {
+    padding-top: 50px;
+    border-top: 2px solid #f4efe7;
+    text-align: center;
+}
+
+.insta-card__quote {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-style: italic;
+    color: rgba(31, 26, 22, .65);
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.insta-card__quote-ref {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(168, 119, 85, .8);
+}

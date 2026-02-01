@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- html2canvas para gerar imagens -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 </head>
 
 <body>
@@ -304,6 +306,64 @@
     <a class="fab" href="https://wa.me/5565999981976" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">
         💬
     </a>
+
+    <!-- Container oculto para gerar imagem Instagram -->
+    <div id="instaCard" class="insta-card" hidden>
+        <div class="insta-card__bg-decoration"></div>
+        <div class="insta-card__content">
+            
+            <div class="insta-card__header">
+                <div class="insta-card__logo">
+                    <img src="assets/logo.png" alt="Read Your Bible" crossorigin="anonymous" />
+                </div>
+                <div class="insta-card__brand-text">
+                    <span class="insta-card__title">Read Your Bible</span>
+                    <span class="insta-card__handle">@read.your.bible</span>
+                </div>
+            </div>
+
+            <div class="insta-card__main">
+                <div class="insta-card__date-wrapper">
+                    <div class="insta-card__date-label">Plano 365 dias</div>
+                    <div class="insta-card__date" id="instaCardDate">JANEIRO · DIA 1</div>
+                </div>
+
+                <div class="insta-card__readings">
+                    <div class="insta-reading">
+                        <div class="insta-reading__header">
+                            <span class="insta-reading__icon">📜</span>
+                            <span class="insta-reading__label">Velho Testamento</span>
+                        </div>
+                        <div class="insta-reading__text" id="instaVT">Gênesis 1–2</div>
+                    </div>
+
+                    <div class="insta-reading insta-reading--accent">
+                        <div class="insta-reading__header">
+                            <span class="insta-reading__icon">🎵</span>
+                            <span class="insta-reading__label">Salmo</span>
+                        </div>
+                        <div class="insta-reading__text" id="instaSL">Salmo 1</div>
+                    </div>
+
+                    <div class="insta-reading">
+                        <div class="insta-reading__header">
+                            <span class="insta-reading__icon">✝️</span>
+                            <span class="insta-reading__label">Novo Testamento</span>
+                        </div>
+                        <div class="insta-reading__text" id="instaNT">Mateus 1–2</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="insta-card__footer">
+                <div class="insta-card__quote">
+                    "Lâmpada para os meus pés é a tua palavra e luz para o meu caminho."
+                </div>
+                <div class="insta-card__quote-ref">Salmos 119:105</div>
+            </div>
+
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
