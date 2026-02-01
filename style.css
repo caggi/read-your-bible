@@ -878,6 +878,22 @@ body {
     background: rgba(244, 239, 231, .6);
 }
 
+/* Destaque do dia atual na tabela */
+.reading-plan__row.is-today {
+    background: rgba(168, 119, 85, .14);
+    border-color: rgba(168, 119, 85, .3);
+}
+
+.reading-plan__row.is-today:hover {
+    background: rgba(168, 119, 85, .2);
+}
+
+.reading-plan__row.is-today .day {
+    background: rgba(168, 119, 85, .25);
+    border-color: rgba(168, 119, 85, .4);
+    font-weight: 900;
+}
+
 .reading-plan .day {
     font-weight: 900;
     text-align: center;
