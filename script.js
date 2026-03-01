@@ -107,8 +107,38 @@ document.addEventListener('DOMContentLoaded', function () {
             28: { vt: "Levítico 19–20", sl: "Salmo 55", nt: "Lucas 19" }
         },
         2: { // Março
-            1: { vt: "Levítico 21–22", sl: "Salmo 56", nt: "Lucas 20" },
-        }
+            1:  { vt: "Levítico 21–22", sl: "Salmo 56", nt: "Lucas 20", verse: "Em Deus ponho a minha confiança e não temerei.", ref: "Salmo 56:11" },
+            2:  { vt: "Levítico 23–24", sl: "Salmo 57", nt: "Lucas 21", verse: "Sê exaltado, ó Deus, acima dos céus.", ref: "Salmo 57:5" },
+            3:  { vt: "Levítico 25", sl: "Salmo 58", nt: "Lucas 22", verse: "O justo se alegrará quando vir a vingança.", ref: "Salmo 58:10" },
+            4:  { vt: "Levítico 26", sl: "Salmo 59", nt: "Lucas 23", verse: "Deus é o meu alto refúgio.", ref: "Salmo 59:9" },
+            5:  { vt: "Levítico 27", sl: "Salmo 60", nt: "Lucas 24", verse: "Dá-nos auxílio contra o adversário.", ref: "Salmo 60:11" },
+            6:  { vt: "Números 1", sl: "Salmo 61", nt: "João 1", verse: "Leva-me para a rocha que é mais alta do que eu.", ref: "Salmo 61:2" },
+            7:  { vt: "Números 2", sl: "Salmo 62", nt: "João 2", verse: "Só em Deus espera, ó minha alma.", ref: "Salmo 62:5" },
+            8:  { vt: "Números 3", sl: "Salmo 63", nt: "João 3", verse: "A minha alma tem sede de ti.", ref: "Salmo 63:1" },
+            9:  { vt: "Números 4", sl: "Salmo 64", nt: "João 4", verse: "O justo se alegrará no Senhor.", ref: "Salmo 64:10" },
+            10: { vt: "Números 5–6", sl: "Salmo 65", nt: "João 5", verse: "Tu ouves a oração.", ref: "Salmo 65:2" },
+            11: { vt: "Números 7", sl: "Salmo 66", nt: "João 6", verse: "Bendito seja Deus, que não rejeitou a minha oração.", ref: "Salmo 66:20" },
+            12: { vt: "Números 8–9", sl: "Salmo 67", nt: "João 7", verse: "Deus tenha misericórdia de nós e nos abençoe.", ref: "Salmo 67:1" },
+            13: { vt: "Números 10–11", sl: "Salmo 68:1-18", nt: "João 8", verse: "Levante-se Deus, e sejam dissipados os seus inimigos.", ref: "Salmo 68:1" },
+            14: { vt: "Números 12–13", sl: "Salmo 68:19-36", nt: "João 9", verse: "Bendito seja o Senhor, que de dia em dia nos carrega de benefícios.", ref: "Salmo 68:19" },
+            15: { vt: "Números 14", sl: "Salmo 69:1-18", nt: "João 10", verse: "Salva-me, ó Deus, porque as águas entraram até à minha alma.", ref: "Salmo 69:1" },
+            16: { vt: "Números 15", sl: "Salmo 69:19-36", nt: "João 11", verse: "Louvarei o nome de Deus com cântico.", ref: "Salmo 69:30" },
+            17: { vt: "Números 16", sl: "Salmo 70", nt: "João 12", verse: "Apressa-te, ó Deus, em me livrar.", ref: "Salmo 70:1" },
+            18: { vt: "Números 17–18", sl: "Salmo 71", nt: "João 13", verse: "Em ti, Senhor, confio.", ref: "Salmo 71:1" },
+            19: { vt: "Números 19–20", sl: "Salmo 72", nt: "João 14", verse: "Bendito seja o Senhor Deus, o Deus de Israel.", ref: "Salmo 72:18" },
+            20: { vt: "Números 21–22", sl: "Salmo 73", nt: "João 15", verse: "Quanto a mim, bom é aproximar-me de Deus.", ref: "Salmo 73:28" },
+            21: { vt: "Números 23–24", sl: "Salmo 74", nt: "João 16", verse: "Levanta-te, ó Deus, pleiteia a tua causa.", ref: "Salmo 74:22" },
+            22: { vt: "Números 25–26", sl: "Salmo 75", nt: "João 17", verse: "Exaltarei o teu nome, porque está perto.", ref: "Salmo 75:1" },
+            23: { vt: "Números 27–28", sl: "Salmo 76", nt: "João 18", verse: "Tu és tremendo.", ref: "Salmo 76:7" },
+            24: { vt: "Números 29–30", sl: "Salmo 77", nt: "João 19", verse: "Lembro-me das obras do Senhor.", ref: "Salmo 77:11" },
+            25: { vt: "Números 31", sl: "Salmo 78:1-39", nt: "João 20", verse: "Contaremos à geração vindoura os louvores do Senhor.", ref: "Salmo 78:4" },
+            26: { vt: "Números 32", sl: "Salmo 78:40-72", nt: "João 21 – Atos 1", verse: "Escolheu a Davi, seu servo.", ref: "Salmo 78:70" },
+            27: { vt: "Números 33", sl: "Salmo 79", nt: "Atos 2", verse: "Ajuda-nos, ó Deus da nossa salvação.", ref: "Salmo 79:9" },
+            28: { vt: "Números 34–35", sl: "Salmo 80", nt: "Atos 3", verse: "Restaura-nos, ó Deus.", ref: "Salmo 80:3" },
+            29: { vt: "Números 36 – Deuteronômio 1", sl: "Salmo 81", nt: "Atos 4", verse: "Eu sou o Senhor teu Deus.", ref: "Salmo 81:10" },
+            30: { vt: "Deuteronômio 2–3", sl: "Salmo 82", nt: "Atos 5", verse: "Levanta-te, ó Deus, julga a terra.", ref: "Salmo 82:8" },
+            31: { vt: "Deuteronômio 4", sl: "Salmo 83", nt: "Atos 6", verse: "Não te cales, ó Deus.", ref: "Salmo 83:1" }
+        },
     };
 
 
@@ -350,8 +380,38 @@ document.addEventListener('DOMContentLoaded', function () {
             28: { vt: "Levítico 19–20", sl: "Salmo 55", nt: "Lucas 19", verse: "Entrega os teus cuidados ao Senhor.", ref: "Salmo 55:22" }
         },
         2: { // Março
-            1: { vt: "Levítico 21–22", sl: "Salmo 56", nt: "Lucas 20", verse: "Em Deus ponho a minha confiança e não temerei.", ref: "Salmo 56:11" },
-        }
+            1:  { vt: "Levítico 21–22", sl: "Salmo 56", nt: "Lucas 20", verse: "Em Deus ponho a minha confiança e não temerei.", ref: "Salmo 56:11" },
+            2:  { vt: "Levítico 23–24", sl: "Salmo 57", nt: "Lucas 21", verse: "Sê exaltado, ó Deus, acima dos céus.", ref: "Salmo 57:5" },
+            3:  { vt: "Levítico 25", sl: "Salmo 58", nt: "Lucas 22", verse: "O justo se alegrará quando vir a vingança.", ref: "Salmo 58:10" },
+            4:  { vt: "Levítico 26", sl: "Salmo 59", nt: "Lucas 23", verse: "Deus é o meu alto refúgio.", ref: "Salmo 59:9" },
+            5:  { vt: "Levítico 27", sl: "Salmo 60", nt: "Lucas 24", verse: "Dá-nos auxílio contra o adversário.", ref: "Salmo 60:11" },
+            6:  { vt: "Números 1", sl: "Salmo 61", nt: "João 1", verse: "Leva-me para a rocha que é mais alta do que eu.", ref: "Salmo 61:2" },
+            7:  { vt: "Números 2", sl: "Salmo 62", nt: "João 2", verse: "Só em Deus espera, ó minha alma.", ref: "Salmo 62:5" },
+            8:  { vt: "Números 3", sl: "Salmo 63", nt: "João 3", verse: "A minha alma tem sede de ti.", ref: "Salmo 63:1" },
+            9:  { vt: "Números 4", sl: "Salmo 64", nt: "João 4", verse: "O justo se alegrará no Senhor.", ref: "Salmo 64:10" },
+            10: { vt: "Números 5–6", sl: "Salmo 65", nt: "João 5", verse: "Tu ouves a oração.", ref: "Salmo 65:2" },
+            11: { vt: "Números 7", sl: "Salmo 66", nt: "João 6", verse: "Bendito seja Deus, que não rejeitou a minha oração.", ref: "Salmo 66:20" },
+            12: { vt: "Números 8–9", sl: "Salmo 67", nt: "João 7", verse: "Deus tenha misericórdia de nós e nos abençoe.", ref: "Salmo 67:1" },
+            13: { vt: "Números 10–11", sl: "Salmo 68:1-18", nt: "João 8", verse: "Levante-se Deus, e sejam dissipados os seus inimigos.", ref: "Salmo 68:1" },
+            14: { vt: "Números 12–13", sl: "Salmo 68:19-36", nt: "João 9", verse: "Bendito seja o Senhor, que de dia em dia nos carrega de benefícios.", ref: "Salmo 68:19" },
+            15: { vt: "Números 14", sl: "Salmo 69:1-18", nt: "João 10", verse: "Salva-me, ó Deus, porque as águas entraram até à minha alma.", ref: "Salmo 69:1" },
+            16: { vt: "Números 15", sl: "Salmo 69:19-36", nt: "João 11", verse: "Louvarei o nome de Deus com cântico.", ref: "Salmo 69:30" },
+            17: { vt: "Números 16", sl: "Salmo 70", nt: "João 12", verse: "Apressa-te, ó Deus, em me livrar.", ref: "Salmo 70:1" },
+            18: { vt: "Números 17–18", sl: "Salmo 71", nt: "João 13", verse: "Em ti, Senhor, confio.", ref: "Salmo 71:1" },
+            19: { vt: "Números 19–20", sl: "Salmo 72", nt: "João 14", verse: "Bendito seja o Senhor Deus, o Deus de Israel.", ref: "Salmo 72:18" },
+            20: { vt: "Números 21–22", sl: "Salmo 73", nt: "João 15", verse: "Quanto a mim, bom é aproximar-me de Deus.", ref: "Salmo 73:28" },
+            21: { vt: "Números 23–24", sl: "Salmo 74", nt: "João 16", verse: "Levanta-te, ó Deus, pleiteia a tua causa.", ref: "Salmo 74:22" },
+            22: { vt: "Números 25–26", sl: "Salmo 75", nt: "João 17", verse: "Exaltarei o teu nome, porque está perto.", ref: "Salmo 75:1" },
+            23: { vt: "Números 27–28", sl: "Salmo 76", nt: "João 18", verse: "Tu és tremendo.", ref: "Salmo 76:7" },
+            24: { vt: "Números 29–30", sl: "Salmo 77", nt: "João 19", verse: "Lembro-me das obras do Senhor.", ref: "Salmo 77:11" },
+            25: { vt: "Números 31", sl: "Salmo 78:1-39", nt: "João 20", verse: "Contaremos à geração vindoura os louvores do Senhor.", ref: "Salmo 78:4" },
+            26: { vt: "Números 32", sl: "Salmo 78:40-72", nt: "João 21 – Atos 1", verse: "Escolheu a Davi, seu servo.", ref: "Salmo 78:70" },
+            27: { vt: "Números 33", sl: "Salmo 79", nt: "Atos 2", verse: "Ajuda-nos, ó Deus da nossa salvação.", ref: "Salmo 79:9" },
+            28: { vt: "Números 34–35", sl: "Salmo 80", nt: "Atos 3", verse: "Restaura-nos, ó Deus.", ref: "Salmo 80:3" },
+            29: { vt: "Números 36 – Deuteronômio 1", sl: "Salmo 81", nt: "Atos 4", verse: "Eu sou o Senhor teu Deus.", ref: "Salmo 81:10" },
+            30: { vt: "Deuteronômio 2–3", sl: "Salmo 82", nt: "Atos 5", verse: "Levanta-te, ó Deus, julga a terra.", ref: "Salmo 82:8" },
+            31: { vt: "Deuteronômio 4", sl: "Salmo 83", nt: "Atos 6", verse: "Não te cales, ó Deus.", ref: "Salmo 83:1" }
+        },
     };
 
     function buildTable(monthIndex) {
@@ -494,8 +554,38 @@ function generateInstaImage(day, monthIndex) {
             28: { vt: "Levítico 19–20", sl: "Salmo 55", nt: "Lucas 19", verse: "Cantai louvores a Deus.", ref: "Salmo 47:6" }
         },
         2: { // Março
-            1: { vt: "Levítico 21–22", sl: "Salmo 56", nt: "Lucas 20", verse: "Em Deus ponho a minha confiança e não temerei.", ref: "Salmo 56:11" },
-        }
+            1:  { vt: "Levítico 21–22", sl: "Salmo 56", nt: "Lucas 20", verse: "Em Deus ponho a minha confiança e não temerei.", ref: "Salmo 56:11" },
+            2:  { vt: "Levítico 23–24", sl: "Salmo 57", nt: "Lucas 21", verse: "Sê exaltado, ó Deus, acima dos céus.", ref: "Salmo 57:5" },
+            3:  { vt: "Levítico 25", sl: "Salmo 58", nt: "Lucas 22", verse: "O justo se alegrará quando vir a vingança.", ref: "Salmo 58:10" },
+            4:  { vt: "Levítico 26", sl: "Salmo 59", nt: "Lucas 23", verse: "Deus é o meu alto refúgio.", ref: "Salmo 59:9" },
+            5:  { vt: "Levítico 27", sl: "Salmo 60", nt: "Lucas 24", verse: "Dá-nos auxílio contra o adversário.", ref: "Salmo 60:11" },
+            6:  { vt: "Números 1", sl: "Salmo 61", nt: "João 1", verse: "Leva-me para a rocha que é mais alta do que eu.", ref: "Salmo 61:2" },
+            7:  { vt: "Números 2", sl: "Salmo 62", nt: "João 2", verse: "Só em Deus espera, ó minha alma.", ref: "Salmo 62:5" },
+            8:  { vt: "Números 3", sl: "Salmo 63", nt: "João 3", verse: "A minha alma tem sede de ti.", ref: "Salmo 63:1" },
+            9:  { vt: "Números 4", sl: "Salmo 64", nt: "João 4", verse: "O justo se alegrará no Senhor.", ref: "Salmo 64:10" },
+            10: { vt: "Números 5–6", sl: "Salmo 65", nt: "João 5", verse: "Tu ouves a oração.", ref: "Salmo 65:2" },
+            11: { vt: "Números 7", sl: "Salmo 66", nt: "João 6", verse: "Bendito seja Deus, que não rejeitou a minha oração.", ref: "Salmo 66:20" },
+            12: { vt: "Números 8–9", sl: "Salmo 67", nt: "João 7", verse: "Deus tenha misericórdia de nós e nos abençoe.", ref: "Salmo 67:1" },
+            13: { vt: "Números 10–11", sl: "Salmo 68:1-18", nt: "João 8", verse: "Levante-se Deus, e sejam dissipados os seus inimigos.", ref: "Salmo 68:1" },
+            14: { vt: "Números 12–13", sl: "Salmo 68:19-36", nt: "João 9", verse: "Bendito seja o Senhor, que de dia em dia nos carrega de benefícios.", ref: "Salmo 68:19" },
+            15: { vt: "Números 14", sl: "Salmo 69:1-18", nt: "João 10", verse: "Salva-me, ó Deus, porque as águas entraram até à minha alma.", ref: "Salmo 69:1" },
+            16: { vt: "Números 15", sl: "Salmo 69:19-36", nt: "João 11", verse: "Louvarei o nome de Deus com cântico.", ref: "Salmo 69:30" },
+            17: { vt: "Números 16", sl: "Salmo 70", nt: "João 12", verse: "Apressa-te, ó Deus, em me livrar.", ref: "Salmo 70:1" },
+            18: { vt: "Números 17–18", sl: "Salmo 71", nt: "João 13", verse: "Em ti, Senhor, confio.", ref: "Salmo 71:1" },
+            19: { vt: "Números 19–20", sl: "Salmo 72", nt: "João 14", verse: "Bendito seja o Senhor Deus, o Deus de Israel.", ref: "Salmo 72:18" },
+            20: { vt: "Números 21–22", sl: "Salmo 73", nt: "João 15", verse: "Quanto a mim, bom é aproximar-me de Deus.", ref: "Salmo 73:28" },
+            21: { vt: "Números 23–24", sl: "Salmo 74", nt: "João 16", verse: "Levanta-te, ó Deus, pleiteia a tua causa.", ref: "Salmo 74:22" },
+            22: { vt: "Números 25–26", sl: "Salmo 75", nt: "João 17", verse: "Exaltarei o teu nome, porque está perto.", ref: "Salmo 75:1" },
+            23: { vt: "Números 27–28", sl: "Salmo 76", nt: "João 18", verse: "Tu és tremendo.", ref: "Salmo 76:7" },
+            24: { vt: "Números 29–30", sl: "Salmo 77", nt: "João 19", verse: "Lembro-me das obras do Senhor.", ref: "Salmo 77:11" },
+            25: { vt: "Números 31", sl: "Salmo 78:1-39", nt: "João 20", verse: "Contaremos à geração vindoura os louvores do Senhor.", ref: "Salmo 78:4" },
+            26: { vt: "Números 32", sl: "Salmo 78:40-72", nt: "João 21 – Atos 1", verse: "Escolheu a Davi, seu servo.", ref: "Salmo 78:70" },
+            27: { vt: "Números 33", sl: "Salmo 79", nt: "Atos 2", verse: "Ajuda-nos, ó Deus da nossa salvação.", ref: "Salmo 79:9" },
+            28: { vt: "Números 34–35", sl: "Salmo 80", nt: "Atos 3", verse: "Restaura-nos, ó Deus.", ref: "Salmo 80:3" },
+            29: { vt: "Números 36 – Deuteronômio 1", sl: "Salmo 81", nt: "Atos 4", verse: "Eu sou o Senhor teu Deus.", ref: "Salmo 81:10" },
+            30: { vt: "Deuteronômio 2–3", sl: "Salmo 82", nt: "Atos 5", verse: "Levanta-te, ó Deus, julga a terra.", ref: "Salmo 82:8" },
+            31: { vt: "Deuteronômio 4", sl: "Salmo 83", nt: "Atos 6", verse: "Não te cales, ó Deus.", ref: "Salmo 83:1" }
+        },
     };
 
     const readings = readingsByMonth[monthIndex];
