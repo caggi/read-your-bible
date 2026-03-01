@@ -492,6 +492,9 @@ function generateInstaImage(day, monthIndex) {
             26: { vt: "Levítico 15–16", sl: "Salmo 53", nt: "Lucas 17", verse: "Deus é o nosso refúgio.", ref: "Salmo 46:1" },
             27: { vt: "Levítico 17–18", sl: "Salmo 54", nt: "Lucas 18", verse: "O Senhor dos Exércitos está conosco.", ref: "Salmo 46:7" },
             28: { vt: "Levítico 19–20", sl: "Salmo 55", nt: "Lucas 19", verse: "Cantai louvores a Deus.", ref: "Salmo 47:6" }
+        },
+        2: { // Março
+            1: { vt: "Levítico 21–22", sl: "Salmo 56", nt: "Lucas 20", verse: "Em Deus ponho a minha confiança e não temerei.", ref: "Salmo 56:11" },
         }
     };
 
