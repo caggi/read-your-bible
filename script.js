@@ -105,6 +105,9 @@ document.addEventListener('DOMContentLoaded', function () {
             26: { vt: "Levítico 15–16", sl: "Salmo 53", nt: "Lucas 17" },
             27: { vt: "Levítico 17–18", sl: "Salmo 54", nt: "Lucas 18" },
             28: { vt: "Levítico 19–20", sl: "Salmo 55", nt: "Lucas 19" }
+        },
+        2: { // Março
+            1: { vt: "Levítico 21–22", sl: "Salmo 56", nt: "Lucas 20" },
         }
     };
 
@@ -345,6 +348,9 @@ document.addEventListener('DOMContentLoaded', function () {
             26: { vt: "Levítico 15–16", sl: "Salmo 53", nt: "Lucas 17", verse: "A salvação vem de Deus.", ref: "Salmo 53:6" },
             27: { vt: "Levítico 17–18", sl: "Salmo 54", nt: "Lucas 18", verse: "Eis que Deus é o meu ajudador.", ref: "Salmo 54:4" },
             28: { vt: "Levítico 19–20", sl: "Salmo 55", nt: "Lucas 19", verse: "Entrega os teus cuidados ao Senhor.", ref: "Salmo 55:22" }
+        },
+        2: { // Março
+            1: { vt: "Levítico 21–22", sl: "Salmo 56", nt: "Lucas 20", verse: "Em Deus ponho a minha confiança e não temerei.", ref: "Salmo 56:11" },
         }
     };
 
