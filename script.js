@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!calendarEl || !detailEl) return;
 
     // Estado atual
-    let currentMonth = 0; // 0=Janeiro, 1=Fevereiro, 2=Março
+    let currentMonth = 0; // 0=Janeiro, 1=Fevereiro, 2=Março, 3=Abril, etc.
 
     // Nomes dos meses
     const monthNames = [
@@ -139,6 +139,38 @@ document.addEventListener('DOMContentLoaded', function () {
             30: { vt: "Deuteronômio 2–3", sl: "Salmo 82", nt: "Atos 5", verse: "Levanta-te, ó Deus, julga a terra.", ref: "Salmo 82:8" },
             31: { vt: "Deuteronômio 4", sl: "Salmo 83", nt: "Atos 6", verse: "Não te cales, ó Deus.", ref: "Salmo 83:1" }
         },
+        3: { // Abril
+            1:  { vt: "Deuteronômio 5–6", sl: "Salmo 84", nt: "Atos 7", verse: "Quão amáveis são os teus tabernáculos, Senhor.", ref: "Salmo 84:1" },
+            2:  { vt: "Deuteronômio 7–8", sl: "Salmo 85", nt: "Atos 8", verse: "Mostra-nos, Senhor, a tua misericórdia.", ref: "Salmo 85:7" },
+            3:  { vt: "Deuteronômio 9–10", sl: "Salmo 86", nt: "Atos 9", verse: "Ensina-me o teu caminho, Senhor.", ref: "Salmo 86:11" },
+            4:  { vt: "Deuteronômio 11–12", sl: "Salmo 87", nt: "Atos 10", verse: "O Senhor ama as portas de Sião.", ref: "Salmo 87:2" },
+            5:  { vt: "Deuteronômio 13–14", sl: "Salmo 88", nt: "Atos 11", verse: "Chegue à tua presença a minha oração.", ref: "Salmo 88:2" },
+            6:  { vt: "Deuteronômio 15–17", sl: "Salmo 89:1–29", nt: "Atos 12", verse: "Cantarei para sempre as misericórdias do Senhor.", ref: "Salmo 89:1" },
+            7:  { vt: "Deuteronômio 18–20", sl: "Salmo 89:30–52", nt: "Atos 13", verse: "Bem-aventurado o povo que conhece o som festivo.", ref: "Salmo 89:15" },
+            8:  { vt: "Deuteronômio 21–22", sl: "Salmo 90", nt: "Atos 14", verse: "Ensina-nos a contar os nossos dias.", ref: "Salmo 90:12" },
+            9:  { vt: "Deuteronômio 23–24", sl: "Salmo 91", nt: "Atos 15", verse: "Aquele que habita no esconderijo do Altíssimo.", ref: "Salmo 91:1" },
+            10: { vt: "Deuteronômio 25–27", sl: "Salmo 92", nt: "Atos 16", verse: "Bom é render graças ao Senhor.", ref: "Salmo 92:1" },
+            11: { vt: "Deuteronômio 28", sl: "Salmo 93", nt: "Atos 17", verse: "O Senhor reina, está vestido de majestade.", ref: "Salmo 93:1" },
+            12: { vt: "Deuteronômio 29–30", sl: "Salmo 94", nt: "Atos 18", verse: "O Senhor não desampara o seu povo.", ref: "Salmo 94:14" },
+            13: { vt: "Deuteronômio 31", sl: "Salmo 95", nt: "Atos 19", verse: "Vinde, cantemos ao Senhor.", ref: "Salmo 95:1" },
+            14: { vt: "Deuteronômio 32", sl: "Salmo 96", nt: "Atos 20", verse: "Cantai ao Senhor um cântico novo.", ref: "Salmo 96:1" },
+            15: { vt: "Deuteronômio 33 – Josué 1", sl: "Salmo 97", nt: "Atos 21", verse: "O Senhor reina; alegre-se a terra.", ref: "Salmo 97:1" },
+            16: { vt: "Josué 2–4", sl: "Salmo 98", nt: "Atos 22", verse: "Cantai ao Senhor um cântico novo.", ref: "Salmo 98:1" },
+            17: { vt: "Josué 5–7", sl: "Salmo 99", nt: "Atos 23", verse: "Exaltai ao Senhor nosso Deus.", ref: "Salmo 99:5" },
+            18: { vt: "Josué 8–9", sl: "Salmo 100", nt: "Atos 24–25", verse: "Celebrai com júbilo ao Senhor.", ref: "Salmo 100:1" },
+            19: { vt: "Josué 10–11", sl: "Salmo 101", nt: "Atos 26", verse: "Cantarei a bondade e a justiça.", ref: "Salmo 101:1" },
+            20: { vt: "Josué 12–13", sl: "Salmo 102", nt: "Atos 27", verse: "O Senhor ouviu a oração do desamparado.", ref: "Salmo 102:17" },
+            21: { vt: "Josué 14–15", sl: "Salmo 103", nt: "Atos 28", verse: "Bendize, ó minha alma, ao Senhor.", ref: "Salmo 103:1" },
+            22: { vt: "Josué 16–18", sl: "Salmo 104", nt: "Romanos 1", verse: "Bendize, ó minha alma, ao Senhor.", ref: "Salmo 104:1" },
+            23: { vt: "Josué 19–20", sl: "Salmo 105:1–25", nt: "Romanos 2", verse: "Rendei graças ao Senhor.", ref: "Salmo 105:1" },
+            24: { vt: "Josué 21", sl: "Salmo 105:26–45", nt: "Romanos 3–4", verse: "Ele se lembrou da sua santa promessa.", ref: "Salmo 105:42" },
+            25: { vt: "Josué 22–23", sl: "Salmo 106:1–23", nt: "Romanos 5–6", verse: "Rendei graças ao Senhor, porque ele é bom.", ref: "Salmo 106:1" },
+            26: { vt: "Josué 24 – Juízes 1", sl: "Salmo 106:24–48", nt: "Romanos 7", verse: "Salva-nos, Senhor nosso Deus.", ref: "Salmo 106:47" },
+            27: { vt: "Juízes 2–3", sl: "Salmo 107:1–22", nt: "Romanos 8", verse: "Deem graças ao Senhor por sua bondade.", ref: "Salmo 107:1" },
+            28: { vt: "Juízes 4–5", sl: "Salmo 107:23–43", nt: "Romanos 9–10", verse: "Ele acalma a tempestade.", ref: "Salmo 107:29" },
+            29: { vt: "Juízes 6–7", sl: "Salmo 108", nt: "Romanos 11", verse: "Firme está o meu coração, ó Deus.", ref: "Salmo 108:1" },
+            30: { vt: "Juízes 8", sl: "Salmo 109", nt: "Romanos 12–13", verse: "Socorre-me, Senhor meu Deus.", ref: "Salmo 109:26" }
+        }
     };
 
 
@@ -251,8 +283,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Adiciona event listeners aos chips dos meses
     monthChips.forEach((chip, idx) => {
-        // Só habilita Janeiro (0), Fevereiro (1) e Março (2)
-        if (idx <= 2) {
+        // Só habilita Janeiro (0), Fevereiro (1), Março (2) e Abril (3)
+        if (idx <= 3) {
             chip.disabled = false;
             chip.classList.remove("is-disabled");
             chip.addEventListener("click", () => switchMonth(idx));
@@ -412,6 +444,38 @@ document.addEventListener('DOMContentLoaded', function () {
             30: { vt: "Deuteronômio 2–3", sl: "Salmo 82", nt: "Atos 5", verse: "Levanta-te, ó Deus, julga a terra.", ref: "Salmo 82:8" },
             31: { vt: "Deuteronômio 4", sl: "Salmo 83", nt: "Atos 6", verse: "Não te cales, ó Deus.", ref: "Salmo 83:1" }
         },
+        3: { // Abril
+            1:  { vt: "Deuteronômio 5–6", sl: "Salmo 84", nt: "Atos 7", verse: "Quão amáveis são os teus tabernáculos, Senhor.", ref: "Salmo 84:1" },
+            2:  { vt: "Deuteronômio 7–8", sl: "Salmo 85", nt: "Atos 8", verse: "Mostra-nos, Senhor, a tua misericórdia.", ref: "Salmo 85:7" },
+            3:  { vt: "Deuteronômio 9–10", sl: "Salmo 86", nt: "Atos 9", verse: "Ensina-me o teu caminho, Senhor.", ref: "Salmo 86:11" },
+            4:  { vt: "Deuteronômio 11–12", sl: "Salmo 87", nt: "Atos 10", verse: "O Senhor ama as portas de Sião.", ref: "Salmo 87:2" },
+            5:  { vt: "Deuteronômio 13–14", sl: "Salmo 88", nt: "Atos 11", verse: "Chegue à tua presença a minha oração.", ref: "Salmo 88:2" },
+            6:  { vt: "Deuteronômio 15–17", sl: "Salmo 89:1–29", nt: "Atos 12", verse: "Cantarei para sempre as misericórdias do Senhor.", ref: "Salmo 89:1" },
+            7:  { vt: "Deuteronômio 18–20", sl: "Salmo 89:30–52", nt: "Atos 13", verse: "Bem-aventurado o povo que conhece o som festivo.", ref: "Salmo 89:15" },
+            8:  { vt: "Deuteronômio 21–22", sl: "Salmo 90", nt: "Atos 14", verse: "Ensina-nos a contar os nossos dias.", ref: "Salmo 90:12" },
+            9:  { vt: "Deuteronômio 23–24", sl: "Salmo 91", nt: "Atos 15", verse: "Aquele que habita no esconderijo do Altíssimo.", ref: "Salmo 91:1" },
+            10: { vt: "Deuteronômio 25–27", sl: "Salmo 92", nt: "Atos 16", verse: "Bom é render graças ao Senhor.", ref: "Salmo 92:1" },
+            11: { vt: "Deuteronômio 28", sl: "Salmo 93", nt: "Atos 17", verse: "O Senhor reina, está vestido de majestade.", ref: "Salmo 93:1" },
+            12: { vt: "Deuteronômio 29–30", sl: "Salmo 94", nt: "Atos 18", verse: "O Senhor não desampara o seu povo.", ref: "Salmo 94:14" },
+            13: { vt: "Deuteronômio 31", sl: "Salmo 95", nt: "Atos 19", verse: "Vinde, cantemos ao Senhor.", ref: "Salmo 95:1" },
+            14: { vt: "Deuteronômio 32", sl: "Salmo 96", nt: "Atos 20", verse: "Cantai ao Senhor um cântico novo.", ref: "Salmo 96:1" },
+            15: { vt: "Deuteronômio 33 – Josué 1", sl: "Salmo 97", nt: "Atos 21", verse: "O Senhor reina; alegre-se a terra.", ref: "Salmo 97:1" },
+            16: { vt: "Josué 2–4", sl: "Salmo 98", nt: "Atos 22", verse: "Cantai ao Senhor um cântico novo.", ref: "Salmo 98:1" },
+            17: { vt: "Josué 5–7", sl: "Salmo 99", nt: "Atos 23", verse: "Exaltai ao Senhor nosso Deus.", ref: "Salmo 99:5" },
+            18: { vt: "Josué 8–9", sl: "Salmo 100", nt: "Atos 24–25", verse: "Celebrai com júbilo ao Senhor.", ref: "Salmo 100:1" },
+            19: { vt: "Josué 10–11", sl: "Salmo 101", nt: "Atos 26", verse: "Cantarei a bondade e a justiça.", ref: "Salmo 101:1" },
+            20: { vt: "Josué 12–13", sl: "Salmo 102", nt: "Atos 27", verse: "O Senhor ouviu a oração do desamparado.", ref: "Salmo 102:17" },
+            21: { vt: "Josué 14–15", sl: "Salmo 103", nt: "Atos 28", verse: "Bendize, ó minha alma, ao Senhor.", ref: "Salmo 103:1" },
+            22: { vt: "Josué 16–18", sl: "Salmo 104", nt: "Romanos 1", verse: "Bendize, ó minha alma, ao Senhor.", ref: "Salmo 104:1" },
+            23: { vt: "Josué 19–20", sl: "Salmo 105:1–25", nt: "Romanos 2", verse: "Rendei graças ao Senhor.", ref: "Salmo 105:1" },
+            24: { vt: "Josué 21", sl: "Salmo 105:26–45", nt: "Romanos 3–4", verse: "Ele se lembrou da sua santa promessa.", ref: "Salmo 105:42" },
+            25: { vt: "Josué 22–23", sl: "Salmo 106:1–23", nt: "Romanos 5–6", verse: "Rendei graças ao Senhor, porque ele é bom.", ref: "Salmo 106:1" },
+            26: { vt: "Josué 24 – Juízes 1", sl: "Salmo 106:24–48", nt: "Romanos 7", verse: "Salva-nos, Senhor nosso Deus.", ref: "Salmo 106:47" },
+            27: { vt: "Juízes 2–3", sl: "Salmo 107:1–22", nt: "Romanos 8", verse: "Deem graças ao Senhor por sua bondade.", ref: "Salmo 107:1" },
+            28: { vt: "Juízes 4–5", sl: "Salmo 107:23–43", nt: "Romanos 9–10", verse: "Ele acalma a tempestade.", ref: "Salmo 107:29" },
+            29: { vt: "Juízes 6–7", sl: "Salmo 108", nt: "Romanos 11", verse: "Firme está o meu coração, ó Deus.", ref: "Salmo 108:1" },
+            30: { vt: "Juízes 8", sl: "Salmo 109", nt: "Romanos 12–13", verse: "Socorre-me, Senhor meu Deus.", ref: "Salmo 109:26" }
+        }
     };
 
     function buildTable(monthIndex) {
@@ -586,6 +650,38 @@ function generateInstaImage(day, monthIndex) {
             30: { vt: "Deuteronômio 2–3", sl: "Salmo 82", nt: "Atos 5", verse: "Levanta-te, ó Deus, julga a terra.", ref: "Salmo 82:8" },
             31: { vt: "Deuteronômio 4", sl: "Salmo 83", nt: "Atos 6", verse: "Não te cales, ó Deus.", ref: "Salmo 83:1" }
         },
+        3: { // Abril
+            1:  { vt: "Deuteronômio 5–6", sl: "Salmo 84", nt: "Atos 7", verse: "Quão amáveis são os teus tabernáculos, Senhor.", ref: "Salmo 84:1" },
+            2:  { vt: "Deuteronômio 7–8", sl: "Salmo 85", nt: "Atos 8", verse: "Mostra-nos, Senhor, a tua misericórdia.", ref: "Salmo 85:7" },
+            3:  { vt: "Deuteronômio 9–10", sl: "Salmo 86", nt: "Atos 9", verse: "Ensina-me o teu caminho, Senhor.", ref: "Salmo 86:11" },
+            4:  { vt: "Deuteronômio 11–12", sl: "Salmo 87", nt: "Atos 10", verse: "O Senhor ama as portas de Sião.", ref: "Salmo 87:2" },
+            5:  { vt: "Deuteronômio 13–14", sl: "Salmo 88", nt: "Atos 11", verse: "Chegue à tua presença a minha oração.", ref: "Salmo 88:2" },
+            6:  { vt: "Deuteronômio 15–17", sl: "Salmo 89:1–29", nt: "Atos 12", verse: "Cantarei para sempre as misericórdias do Senhor.", ref: "Salmo 89:1" },
+            7:  { vt: "Deuteronômio 18–20", sl: "Salmo 89:30–52", nt: "Atos 13", verse: "Bem-aventurado o povo que conhece o som festivo.", ref: "Salmo 89:15" },
+            8:  { vt: "Deuteronômio 21–22", sl: "Salmo 90", nt: "Atos 14", verse: "Ensina-nos a contar os nossos dias.", ref: "Salmo 90:12" },
+            9:  { vt: "Deuteronômio 23–24", sl: "Salmo 91", nt: "Atos 15", verse: "Aquele que habita no esconderijo do Altíssimo.", ref: "Salmo 91:1" },
+            10: { vt: "Deuteronômio 25–27", sl: "Salmo 92", nt: "Atos 16", verse: "Bom é render graças ao Senhor.", ref: "Salmo 92:1" },
+            11: { vt: "Deuteronômio 28", sl: "Salmo 93", nt: "Atos 17", verse: "O Senhor reina, está vestido de majestade.", ref: "Salmo 93:1" },
+            12: { vt: "Deuteronômio 29–30", sl: "Salmo 94", nt: "Atos 18", verse: "O Senhor não desampara o seu povo.", ref: "Salmo 94:14" },
+            13: { vt: "Deuteronômio 31", sl: "Salmo 95", nt: "Atos 19", verse: "Vinde, cantemos ao Senhor.", ref: "Salmo 95:1" },
+            14: { vt: "Deuteronômio 32", sl: "Salmo 96", nt: "Atos 20", verse: "Cantai ao Senhor um cântico novo.", ref: "Salmo 96:1" },
+            15: { vt: "Deuteronômio 33 – Josué 1", sl: "Salmo 97", nt: "Atos 21", verse: "O Senhor reina; alegre-se a terra.", ref: "Salmo 97:1" },
+            16: { vt: "Josué 2–4", sl: "Salmo 98", nt: "Atos 22", verse: "Cantai ao Senhor um cântico novo.", ref: "Salmo 98:1" },
+            17: { vt: "Josué 5–7", sl: "Salmo 99", nt: "Atos 23", verse: "Exaltai ao Senhor nosso Deus.", ref: "Salmo 99:5" },
+            18: { vt: "Josué 8–9", sl: "Salmo 100", nt: "Atos 24–25", verse: "Celebrai com júbilo ao Senhor.", ref: "Salmo 100:1" },
+            19: { vt: "Josué 10–11", sl: "Salmo 101", nt: "Atos 26", verse: "Cantarei a bondade e a justiça.", ref: "Salmo 101:1" },
+            20: { vt: "Josué 12–13", sl: "Salmo 102", nt: "Atos 27", verse: "O Senhor ouviu a oração do desamparado.", ref: "Salmo 102:17" },
+            21: { vt: "Josué 14–15", sl: "Salmo 103", nt: "Atos 28", verse: "Bendize, ó minha alma, ao Senhor.", ref: "Salmo 103:1" },
+            22: { vt: "Josué 16–18", sl: "Salmo 104", nt: "Romanos 1", verse: "Bendize, ó minha alma, ao Senhor.", ref: "Salmo 104:1" },
+            23: { vt: "Josué 19–20", sl: "Salmo 105:1–25", nt: "Romanos 2", verse: "Rendei graças ao Senhor.", ref: "Salmo 105:1" },
+            24: { vt: "Josué 21", sl: "Salmo 105:26–45", nt: "Romanos 3–4", verse: "Ele se lembrou da sua santa promessa.", ref: "Salmo 105:42" },
+            25: { vt: "Josué 22–23", sl: "Salmo 106:1–23", nt: "Romanos 5–6", verse: "Rendei graças ao Senhor, porque ele é bom.", ref: "Salmo 106:1" },
+            26: { vt: "Josué 24 – Juízes 1", sl: "Salmo 106:24–48", nt: "Romanos 7", verse: "Salva-nos, Senhor nosso Deus.", ref: "Salmo 106:47" },
+            27: { vt: "Juízes 2–3", sl: "Salmo 107:1–22", nt: "Romanos 8", verse: "Deem graças ao Senhor por sua bondade.", ref: "Salmo 107:1" },
+            28: { vt: "Juízes 4–5", sl: "Salmo 107:23–43", nt: "Romanos 9–10", verse: "Ele acalma a tempestade.", ref: "Salmo 107:29" },
+            29: { vt: "Juízes 6–7", sl: "Salmo 108", nt: "Romanos 11", verse: "Firme está o meu coração, ó Deus.", ref: "Salmo 108:1" },
+            30: { vt: "Juízes 8", sl: "Salmo 109", nt: "Romanos 12–13", verse: "Socorre-me, Senhor meu Deus.", ref: "Salmo 109:26" }
+        }
     };
 
     const readings = readingsByMonth[monthIndex];
