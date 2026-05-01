@@ -292,6 +292,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function switchMonth(monthIndex) {
+
+        console.log("Switching to month index:", monthIndex);
         currentMonth = monthIndex;
         
         // Atualiza badge
@@ -324,8 +326,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Inicializa com o mês atual (até Março) ou Janeiro
-    const initialMonth = (now.getMonth() <= 2) ? now.getMonth() : 0;
+    // Inicializa com o mês atual (até Maio) ou Janeiro
+    const initialMonth = (now.getMonth() <= 4) ? now.getMonth() : 0;
     switchMonth(initialMonth);
 })();
 
