@@ -170,10 +170,43 @@ document.addEventListener('DOMContentLoaded', function () {
             28: { vt: "Juízes 4–5", sl: "Salmo 107:23–43", nt: "Romanos 9–10", verse: "Ele acalma a tempestade.", ref: "Salmo 107:29" },
             29: { vt: "Juízes 6–7", sl: "Salmo 108", nt: "Romanos 11", verse: "Firme está o meu coração, ó Deus.", ref: "Salmo 108:1" },
             30: { vt: "Juízes 8", sl: "Salmo 109", nt: "Romanos 12–13", verse: "Socorre-me, Senhor meu Deus.", ref: "Salmo 109:26" }
+        },
+        4: { // Maio
+            1:  { vt: "Juízes 9", sl: "Salmo 110", nt: "Romanos 14–15", verse: "O Senhor está à tua direita.", ref: "Salmo 110:5" },
+            2:  { vt: "Juízes 10–11", sl: "Salmo 111", nt: "Romanos 16 – 1 Coríntios 1", verse: "Grandes são as obras do Senhor.", ref: "Salmo 111:2" },
+            3:  { vt: "Juízes 12–14", sl: "Salmo 112", nt: "1 Coríntios 2–3", verse: "Bem-aventurado aquele que teme ao Senhor.", ref: "Salmo 112:1" },
+            4:  { vt: "Juízes 15–16", sl: "Salmo 113", nt: "1 Coríntios 4–5", verse: "Louvado seja o nome do Senhor.", ref: "Salmo 113:2" },
+            5:  { vt: "Juízes 17–18", sl: "Salmo 114", nt: "1 Coríntios 6–7", verse: "Treme, ó terra, diante do Senhor.", ref: "Salmo 114:7" },
+            6:  { vt: "Juízes 19–20", sl: "Salmo 115", nt: "1 Coríntios 8–9", verse: "Não a nós, Senhor, mas ao teu nome dá glória.", ref: "Salmo 115:1" },
+            7:  { vt: "Juízes 21 – Rute 1", sl: "Salmo 116", nt: "1 Coríntios 10", verse: "Amo ao Senhor, porque ele ouviu a minha voz.", ref: "Salmo 116:1" },
+            8:  { vt: "Rute 2–4", sl: "Salmo 117", nt: "1 Coríntios 11", verse: "Louvai ao Senhor, todas as nações.", ref: "Salmo 117:1" },
+            9:  { vt: "1 Samuel 1–2", sl: "Salmo 118", nt: "1 Coríntios 12–13", verse: "Rendei graças ao Senhor, porque ele é bom.", ref: "Salmo 118:1" },
+            10: { vt: "1 Samuel 3–5", sl: "Salmo 119:1–8", nt: "1 Coríntios 14", verse: "Bem-aventurados os que andam na lei do Senhor.", ref: "Salmo 119:1" },
+            11: { vt: "1 Samuel 6–8", sl: "Salmo 119:9–16", nt: "1 Coríntios 15", verse: "Guardei a tua palavra no meu coração.", ref: "Salmo 119:11" },
+            12: { vt: "1 Samuel 9–10", sl: "Salmo 119:17–24", nt: "1 Coríntios 16 – 2 Coríntios 1", verse: "Abre os meus olhos para ver as maravilhas da tua lei.", ref: "Salmo 119:18" },
+            13: { vt: "1 Samuel 11–13", sl: "Salmo 119:25–32", nt: "2 Coríntios 2–4", verse: "Vivifica-me segundo a tua palavra.", ref: "Salmo 119:25" },
+            14: { vt: "1 Samuel 14", sl: "Salmo 119:33–40", nt: "2 Coríntios 5–6", verse: "Ensina-me, Senhor, o caminho dos teus estatutos.", ref: "Salmo 119:33" },
+            15: { vt: "1 Samuel 15–16", sl: "Salmo 119:41–48", nt: "2 Coríntios 7–8", verse: "Venham também sobre mim as tuas misericórdias.", ref: "Salmo 119:41" },
+            16: { vt: "1 Samuel 17", sl: "Salmo 119:49–56", nt: "2 Coríntios 9–10", verse: "Lembra-te da palavra dada ao teu servo.", ref: "Salmo 119:49" },
+            17: { vt: "1 Samuel 18–19", sl: "Salmo 119:57–64", nt: "2 Coríntios 11–12", verse: "O Senhor é a minha porção.", ref: "Salmo 119:57" },
+            18: { vt: "1 Samuel 20–21", sl: "Salmo 119:65–72", nt: "2 Coríntios 13 – Gálatas 1", verse: "Ensina-me bom juízo e conhecimento.", ref: "Salmo 119:66" },
+            19: { vt: "1 Samuel 22–23", sl: "Salmo 119:73–80", nt: "Gálatas 2–3", verse: "As tuas mãos me fizeram e me formaram.", ref: "Salmo 119:73" },
+            20: { vt: "1 Samuel 24–25", sl: "Salmo 119:81–88", nt: "Gálatas 4–5", verse: "A minha alma desfalece pela tua salvação.", ref: "Salmo 119:81" },
+            21: { vt: "1 Samuel 26–28", sl: "Salmo 119:89–96", nt: "Gálatas 6 – Efésios 1", verse: "Para sempre, Senhor, a tua palavra permanece.", ref: "Salmo 119:89" },
+            22: { vt: "1 Samuel 29–31", sl: "Salmo 119:97–104", nt: "Efésios 2–3", verse: "Quanto amo a tua lei.", ref: "Salmo 119:97" },
+            23: { vt: "2 Samuel 1–2", sl: "Salmo 119:105–112", nt: "Efésios 4", verse: "Lâmpada para os meus pés é a tua palavra.", ref: "Salmo 119:105" },
+            24: { vt: "2 Samuel 3–4", sl: "Salmo 119:113–120", nt: "Efésios 5", verse: "Tu és o meu refúgio e o meu escudo.", ref: "Salmo 119:114" },
+            25: { vt: "2 Samuel 5–6", sl: "Salmo 119:121–128", nt: "Efésios 6 – Filipenses 1", verse: "Já é tempo de operares, Senhor.", ref: "Salmo 119:126" },
+            26: { vt: "2 Samuel 7–9", sl: "Salmo 119:129–136", nt: "Filipenses 2–3", verse: "Maravilhosos são os teus testemunhos.", ref: "Salmo 119:129" },
+            27: { vt: "2 Samuel 10–11", sl: "Salmo 119:137–144", nt: "Filipenses 4 – Colossenses 1", verse: "Justo és, Senhor, e retos são os teus juízos.", ref: "Salmo 119:137" },
+            28: { vt: "2 Samuel 12–13", sl: "Salmo 119:145–152", nt: "Colossenses 2–3", verse: "Clamo de todo o coração; escuta-me, Senhor.", ref: "Salmo 119:145" },
+            29: { vt: "2 Samuel 14–15", sl: "Salmo 119:153–160", nt: "Colossenses 4 – 1 Tessalonicenses 2", verse: "Considera a minha aflição e livra-me.", ref: "Salmo 119:153" },
+            30: { vt: "2 Samuel 16–17", sl: "Salmo 119:161–168", nt: "1 Tessalonicenses 3–4", verse: "Alegro-me na tua palavra.", ref: "Salmo 119:162" },
+            31: { vt: "2 Samuel 18–19", sl: "Salmo 119:169–176", nt: "1 Tessalonicenses 5 – 2 Tessalonicenses 1", verse: "Chegue a ti o meu clamor, Senhor.", ref: "Salmo 119:169" }
         }
     };
 
-
+    
     function renderDetail(day) {
         const readings = readingsByMonth[currentMonth];
         const r = readings[day];
@@ -475,6 +508,39 @@ document.addEventListener('DOMContentLoaded', function () {
             28: { vt: "Juízes 4–5", sl: "Salmo 107:23–43", nt: "Romanos 9–10", verse: "Ele acalma a tempestade.", ref: "Salmo 107:29" },
             29: { vt: "Juízes 6–7", sl: "Salmo 108", nt: "Romanos 11", verse: "Firme está o meu coração, ó Deus.", ref: "Salmo 108:1" },
             30: { vt: "Juízes 8", sl: "Salmo 109", nt: "Romanos 12–13", verse: "Socorre-me, Senhor meu Deus.", ref: "Salmo 109:26" }
+        },
+        4: { // Maio
+            1:  { vt: "Juízes 9", sl: "Salmo 110", nt: "Romanos 14–15", verse: "O Senhor está à tua direita.", ref: "Salmo 110:5" },
+            2:  { vt: "Juízes 10–11", sl: "Salmo 111", nt: "Romanos 16 – 1 Coríntios 1", verse: "Grandes são as obras do Senhor.", ref: "Salmo 111:2" },
+            3:  { vt: "Juízes 12–14", sl: "Salmo 112", nt: "1 Coríntios 2–3", verse: "Bem-aventurado aquele que teme ao Senhor.", ref: "Salmo 112:1" },
+            4:  { vt: "Juízes 15–16", sl: "Salmo 113", nt: "1 Coríntios 4–5", verse: "Louvado seja o nome do Senhor.", ref: "Salmo 113:2" },
+            5:  { vt: "Juízes 17–18", sl: "Salmo 114", nt: "1 Coríntios 6–7", verse: "Treme, ó terra, diante do Senhor.", ref: "Salmo 114:7" },
+            6:  { vt: "Juízes 19–20", sl: "Salmo 115", nt: "1 Coríntios 8–9", verse: "Não a nós, Senhor, mas ao teu nome dá glória.", ref: "Salmo 115:1" },
+            7:  { vt: "Juízes 21 – Rute 1", sl: "Salmo 116", nt: "1 Coríntios 10", verse: "Amo ao Senhor, porque ele ouviu a minha voz.", ref: "Salmo 116:1" },
+            8:  { vt: "Rute 2–4", sl: "Salmo 117", nt: "1 Coríntios 11", verse: "Louvai ao Senhor, todas as nações.", ref: "Salmo 117:1" },
+            9:  { vt: "1 Samuel 1–2", sl: "Salmo 118", nt: "1 Coríntios 12–13", verse: "Rendei graças ao Senhor, porque ele é bom.", ref: "Salmo 118:1" },
+            10: { vt: "1 Samuel 3–5", sl: "Salmo 119:1–8", nt: "1 Coríntios 14", verse: "Bem-aventurados os que andam na lei do Senhor.", ref: "Salmo 119:1" },
+            11: { vt: "1 Samuel 6–8", sl: "Salmo 119:9–16", nt: "1 Coríntios 15", verse: "Guardei a tua palavra no meu coração.", ref: "Salmo 119:11" },
+            12: { vt: "1 Samuel 9–10", sl: "Salmo 119:17–24", nt: "1 Coríntios 16 – 2 Coríntios 1", verse: "Abre os meus olhos para ver as maravilhas da tua lei.", ref: "Salmo 119:18" },
+            13: { vt: "1 Samuel 11–13", sl: "Salmo 119:25–32", nt: "2 Coríntios 2–4", verse: "Vivifica-me segundo a tua palavra.", ref: "Salmo 119:25" },
+            14: { vt: "1 Samuel 14", sl: "Salmo 119:33–40", nt: "2 Coríntios 5–6", verse: "Ensina-me, Senhor, o caminho dos teus estatutos.", ref: "Salmo 119:33" },
+            15: { vt: "1 Samuel 15–16", sl: "Salmo 119:41–48", nt: "2 Coríntios 7–8", verse: "Venham também sobre mim as tuas misericórdias.", ref: "Salmo 119:41" },
+            16: { vt: "1 Samuel 17", sl: "Salmo 119:49–56", nt: "2 Coríntios 9–10", verse: "Lembra-te da palavra dada ao teu servo.", ref: "Salmo 119:49" },
+            17: { vt: "1 Samuel 18–19", sl: "Salmo 119:57–64", nt: "2 Coríntios 11–12", verse: "O Senhor é a minha porção.", ref: "Salmo 119:57" },
+            18: { vt: "1 Samuel 20–21", sl: "Salmo 119:65–72", nt: "2 Coríntios 13 – Gálatas 1", verse: "Ensina-me bom juízo e conhecimento.", ref: "Salmo 119:66" },
+            19: { vt: "1 Samuel 22–23", sl: "Salmo 119:73–80", nt: "Gálatas 2–3", verse: "As tuas mãos me fizeram e me formaram.", ref: "Salmo 119:73" },
+            20: { vt: "1 Samuel 24–25", sl: "Salmo 119:81–88", nt: "Gálatas 4–5", verse: "A minha alma desfalece pela tua salvação.", ref: "Salmo 119:81" },
+            21: { vt: "1 Samuel 26–28", sl: "Salmo 119:89–96", nt: "Gálatas 6 – Efésios 1", verse: "Para sempre, Senhor, a tua palavra permanece.", ref: "Salmo 119:89" },
+            22: { vt: "1 Samuel 29–31", sl: "Salmo 119:97–104", nt: "Efésios 2–3", verse: "Quanto amo a tua lei.", ref: "Salmo 119:97" },
+            23: { vt: "2 Samuel 1–2", sl: "Salmo 119:105–112", nt: "Efésios 4", verse: "Lâmpada para os meus pés é a tua palavra.", ref: "Salmo 119:105" },
+            24: { vt: "2 Samuel 3–4", sl: "Salmo 119:113–120", nt: "Efésios 5", verse: "Tu és o meu refúgio e o meu escudo.", ref: "Salmo 119:114" },
+            25: { vt: "2 Samuel 5–6", sl: "Salmo 119:121–128", nt: "Efésios 6 – Filipenses 1", verse: "Já é tempo de operares, Senhor.", ref: "Salmo 119:126" },
+            26: { vt: "2 Samuel 7–9", sl: "Salmo 119:129–136", nt: "Filipenses 2–3", verse: "Maravilhosos são os teus testemunhos.", ref: "Salmo 119:129" },
+            27: { vt: "2 Samuel 10–11", sl: "Salmo 119:137–144", nt: "Filipenses 4 – Colossenses 1", verse: "Justo és, Senhor, e retos são os teus juízos.", ref: "Salmo 119:137" },
+            28: { vt: "2 Samuel 12–13", sl: "Salmo 119:145–152", nt: "Colossenses 2–3", verse: "Clamo de todo o coração; escuta-me, Senhor.", ref: "Salmo 119:145" },
+            29: { vt: "2 Samuel 14–15", sl: "Salmo 119:153–160", nt: "Colossenses 4 – 1 Tessalonicenses 2", verse: "Considera a minha aflição e livra-me.", ref: "Salmo 119:153" },
+            30: { vt: "2 Samuel 16–17", sl: "Salmo 119:161–168", nt: "1 Tessalonicenses 3–4", verse: "Alegro-me na tua palavra.", ref: "Salmo 119:162" },
+            31: { vt: "2 Samuel 18–19", sl: "Salmo 119:169–176", nt: "1 Tessalonicenses 5 – 2 Tessalonicenses 1", verse: "Chegue a ti o meu clamor, Senhor.", ref: "Salmo 119:169" }
         }
     };
 
@@ -681,6 +747,39 @@ function generateInstaImage(day, monthIndex) {
             28: { vt: "Juízes 4–5", sl: "Salmo 107:23–43", nt: "Romanos 9–10", verse: "Ele acalma a tempestade.", ref: "Salmo 107:29" },
             29: { vt: "Juízes 6–7", sl: "Salmo 108", nt: "Romanos 11", verse: "Firme está o meu coração, ó Deus.", ref: "Salmo 108:1" },
             30: { vt: "Juízes 8", sl: "Salmo 109", nt: "Romanos 12–13", verse: "Socorre-me, Senhor meu Deus.", ref: "Salmo 109:26" }
+        },
+        4: { // Maio
+            1:  { vt: "Juízes 9", sl: "Salmo 110", nt: "Romanos 14–15", verse: "O Senhor está à tua direita.", ref: "Salmo 110:5" },
+            2:  { vt: "Juízes 10–11", sl: "Salmo 111", nt: "Romanos 16 – 1 Coríntios 1", verse: "Grandes são as obras do Senhor.", ref: "Salmo 111:2" },
+            3:  { vt: "Juízes 12–14", sl: "Salmo 112", nt: "1 Coríntios 2–3", verse: "Bem-aventurado aquele que teme ao Senhor.", ref: "Salmo 112:1" },
+            4:  { vt: "Juízes 15–16", sl: "Salmo 113", nt: "1 Coríntios 4–5", verse: "Louvado seja o nome do Senhor.", ref: "Salmo 113:2" },
+            5:  { vt: "Juízes 17–18", sl: "Salmo 114", nt: "1 Coríntios 6–7", verse: "Treme, ó terra, diante do Senhor.", ref: "Salmo 114:7" },
+            6:  { vt: "Juízes 19–20", sl: "Salmo 115", nt: "1 Coríntios 8–9", verse: "Não a nós, Senhor, mas ao teu nome dá glória.", ref: "Salmo 115:1" },
+            7:  { vt: "Juízes 21 – Rute 1", sl: "Salmo 116", nt: "1 Coríntios 10", verse: "Amo ao Senhor, porque ele ouviu a minha voz.", ref: "Salmo 116:1" },
+            8:  { vt: "Rute 2–4", sl: "Salmo 117", nt: "1 Coríntios 11", verse: "Louvai ao Senhor, todas as nações.", ref: "Salmo 117:1" },
+            9:  { vt: "1 Samuel 1–2", sl: "Salmo 118", nt: "1 Coríntios 12–13", verse: "Rendei graças ao Senhor, porque ele é bom.", ref: "Salmo 118:1" },
+            10: { vt: "1 Samuel 3–5", sl: "Salmo 119:1–8", nt: "1 Coríntios 14", verse: "Bem-aventurados os que andam na lei do Senhor.", ref: "Salmo 119:1" },
+            11: { vt: "1 Samuel 6–8", sl: "Salmo 119:9–16", nt: "1 Coríntios 15", verse: "Guardei a tua palavra no meu coração.", ref: "Salmo 119:11" },
+            12: { vt: "1 Samuel 9–10", sl: "Salmo 119:17–24", nt: "1 Coríntios 16 – 2 Coríntios 1", verse: "Abre os meus olhos para ver as maravilhas da tua lei.", ref: "Salmo 119:18" },
+            13: { vt: "1 Samuel 11–13", sl: "Salmo 119:25–32", nt: "2 Coríntios 2–4", verse: "Vivifica-me segundo a tua palavra.", ref: "Salmo 119:25" },
+            14: { vt: "1 Samuel 14", sl: "Salmo 119:33–40", nt: "2 Coríntios 5–6", verse: "Ensina-me, Senhor, o caminho dos teus estatutos.", ref: "Salmo 119:33" },
+            15: { vt: "1 Samuel 15–16", sl: "Salmo 119:41–48", nt: "2 Coríntios 7–8", verse: "Venham também sobre mim as tuas misericórdias.", ref: "Salmo 119:41" },
+            16: { vt: "1 Samuel 17", sl: "Salmo 119:49–56", nt: "2 Coríntios 9–10", verse: "Lembra-te da palavra dada ao teu servo.", ref: "Salmo 119:49" },
+            17: { vt: "1 Samuel 18–19", sl: "Salmo 119:57–64", nt: "2 Coríntios 11–12", verse: "O Senhor é a minha porção.", ref: "Salmo 119:57" },
+            18: { vt: "1 Samuel 20–21", sl: "Salmo 119:65–72", nt: "2 Coríntios 13 – Gálatas 1", verse: "Ensina-me bom juízo e conhecimento.", ref: "Salmo 119:66" },
+            19: { vt: "1 Samuel 22–23", sl: "Salmo 119:73–80", nt: "Gálatas 2–3", verse: "As tuas mãos me fizeram e me formaram.", ref: "Salmo 119:73" },
+            20: { vt: "1 Samuel 24–25", sl: "Salmo 119:81–88", nt: "Gálatas 4–5", verse: "A minha alma desfalece pela tua salvação.", ref: "Salmo 119:81" },
+            21: { vt: "1 Samuel 26–28", sl: "Salmo 119:89–96", nt: "Gálatas 6 – Efésios 1", verse: "Para sempre, Senhor, a tua palavra permanece.", ref: "Salmo 119:89" },
+            22: { vt: "1 Samuel 29–31", sl: "Salmo 119:97–104", nt: "Efésios 2–3", verse: "Quanto amo a tua lei.", ref: "Salmo 119:97" },
+            23: { vt: "2 Samuel 1–2", sl: "Salmo 119:105–112", nt: "Efésios 4", verse: "Lâmpada para os meus pés é a tua palavra.", ref: "Salmo 119:105" },
+            24: { vt: "2 Samuel 3–4", sl: "Salmo 119:113–120", nt: "Efésios 5", verse: "Tu és o meu refúgio e o meu escudo.", ref: "Salmo 119:114" },
+            25: { vt: "2 Samuel 5–6", sl: "Salmo 119:121–128", nt: "Efésios 6 – Filipenses 1", verse: "Já é tempo de operares, Senhor.", ref: "Salmo 119:126" },
+            26: { vt: "2 Samuel 7–9", sl: "Salmo 119:129–136", nt: "Filipenses 2–3", verse: "Maravilhosos são os teus testemunhos.", ref: "Salmo 119:129" },
+            27: { vt: "2 Samuel 10–11", sl: "Salmo 119:137–144", nt: "Filipenses 4 – Colossenses 1", verse: "Justo és, Senhor, e retos são os teus juízos.", ref: "Salmo 119:137" },
+            28: { vt: "2 Samuel 12–13", sl: "Salmo 119:145–152", nt: "Colossenses 2–3", verse: "Clamo de todo o coração; escuta-me, Senhor.", ref: "Salmo 119:145" },
+            29: { vt: "2 Samuel 14–15", sl: "Salmo 119:153–160", nt: "Colossenses 4 – 1 Tessalonicenses 2", verse: "Considera a minha aflição e livra-me.", ref: "Salmo 119:153" },
+            30: { vt: "2 Samuel 16–17", sl: "Salmo 119:161–168", nt: "1 Tessalonicenses 3–4", verse: "Alegro-me na tua palavra.", ref: "Salmo 119:162" },
+            31: { vt: "2 Samuel 18–19", sl: "Salmo 119:169–176", nt: "1 Tessalonicenses 5 – 2 Tessalonicenses 1", verse: "Chegue a ti o meu clamor, Senhor.", ref: "Salmo 119:169" }
         }
     };
 
