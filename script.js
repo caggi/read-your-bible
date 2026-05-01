@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!calendarEl || !detailEl) return;
 
     // Estado atual
-    let currentMonth = 3; // 0=Janeiro, 1=Fevereiro, 2=Março, 3=Abril, etc.
+    let currentMonth = 4; // 0=Janeiro, 1=Fevereiro, 2=Março, 3=Abril, etc.
 
     // Nomes dos meses
     const monthNames = [
@@ -283,8 +283,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Adiciona event listeners aos chips dos meses
     monthChips.forEach((chip, idx) => {
-        // Só habilita Janeiro (0), Fevereiro (1), Março (2) e Abril (3)
-        if (idx <= 3) {
+        // Só habilita Janeiro (0), Fevereiro (1), Março (2), Abril (3), etc.
+        if (idx <= 4) {
             chip.disabled = false;
             chip.classList.remove("is-disabled");
             chip.addEventListener("click", () => switchMonth(idx));
@@ -338,7 +338,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!tableContainer || !tableBadge) return;
 
     // Estado atual
-    let currentTableMonth = 3; // Abril
+    let currentTableMonth = 4; // Maio
 
     // Nomes dos meses
     const monthNames = [
@@ -531,16 +531,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Sincroniza com os chips de mês
     monthChips.forEach((chip, idx) => {
-        if (idx <= 3) { // Só Janeiro, Fevereiro, Março e Abril habilitados
+        if (idx <= 4) { // Só Janeiro, Fevereiro, Março, Abril e Maio habilitados
             chip.addEventListener("click", () => {
                 switchTableMonth(idx);
             });
         }
     });
 
-    // Inicializa com o mês atual (até Abril) ou Janeiro
+    // Inicializa com o mês atual (até Maio) ou Janeiro
     const now = new Date();
-    const initialMonth = (now.getMonth() <= 3) ? now.getMonth() : 0;
+    const initialMonth = (now.getMonth() <= 4) ? now.getMonth() : 0;
     switchTableMonth(initialMonth);
 })();
 
